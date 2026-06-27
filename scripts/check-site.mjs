@@ -3,6 +3,10 @@ import path from "node:path";
 import { fileURLToPath } from "node:url";
 
 const root = path.resolve(fileURLToPath(new URL("..", import.meta.url)));
+const adsenseClient = "ca-pub-5456414339006405";
+const adsensePublisher = "pub-5456414339006405";
+const adsenseSellerRow = `google.com, ${adsensePublisher}, DIRECT, f08c47fec0942fa0`;
+
 const required = [
   "index.html",
   "posts/index.html",
@@ -178,6 +182,21 @@ if (!generatedSamples.every((file) => file.content.includes("AdSense 준비 영�
   monetizationFailures.push("generated posts: expected AdSense placeholder, weekly note CTA, and sponsor contact link on every generated post.");
 }
 
+const monetizablePages = [
+  "index.html",
+  "posts/index.html",
+  "investing-method.html",
+  "semiconductor-cycle.html",
+  "space-economy-notes.html",
+  ...generatedSamples.map((file) => file.relativePath)
+];
+for (const monetizablePage of monetizablePages) {
+  const page = scannedFiles.find((file) => file.relativePath === monetizablePage);
+  if (!page?.content.includes(`client=${adsenseClient}`)) {
+    monetizationFailures.push(`${monetizablePage}: missing verified AdSense client script.`);
+  }
+}
+
 for (const legalPage of [
   "privacy.html",
   "disclaimer.html",
@@ -211,8 +230,8 @@ const activeSellerRows = adsTxt.content
   .split(/\r?\n/)
   .map((line) => line.trim())
   .filter((line) => line && !line.startsWith("#") && /google\.com,\s*pub-/i.test(line));
-if (activeSellerRows.length) {
-  monetizationFailures.push("ads.txt: add an active Google seller row only after AdSense approval.");
+if (activeSellerRows.length !== 1 || activeSellerRows[0] !== adsenseSellerRow) {
+  monetizationFailures.push("ads.txt: expected the verified Google AdSense seller row from the connected account.");
 }
 
 if (monetizationFailures.length) {

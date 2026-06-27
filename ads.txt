@@ -1,3 +1,1 @@
-# Jason Jedi Investing has not published an authorized AdSense seller entry yet.
-# Add the assigned publisher line only after approval and account verification.
-# Example: google.com, pub-0000000000000000, DIRECT, f08c47fec0942fa0
+google.com, pub-5456414339006405, DIRECT, f08c47fec0942fa0

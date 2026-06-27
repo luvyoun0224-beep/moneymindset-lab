@@ -115,7 +115,7 @@ All spacing derives from a 4px base. Existing CSS already uses a 16/20/24/28/32/
 
 ### Rules
 
-- Do not add a real AdSense script, publisher ID, or active `ads.txt` seller row until the account is approved.
+- Use only the verified AdSense publisher ID from the connected account for ad scripts and `ads.txt`; never use placeholder publisher IDs.
 - Never ask readers to click ads, refresh pages, or perform any action for ad revenue.
 - Monetization copy must not sound like investment advice, price targets, or guaranteed returns.
 - Legal and contact pages stay clean and readable; they support approval trust rather than carrying ad inventory.

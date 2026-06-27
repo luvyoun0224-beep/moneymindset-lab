@@ -4,10 +4,11 @@ import { fileURLToPath } from "node:url";
 import config from "../site.config.mjs";
 
 const root = path.resolve(fileURLToPath(new URL("..", import.meta.url)));
+const ADSENSE_CLIENT = "ca-pub-5456414339006405";
 
-const ADS_TXT = `# Jason Jedi Investing has not published an authorized AdSense seller entry yet.
-# Add the assigned publisher line only after approval and account verification.
-# Example: google.com, pub-0000000000000000, DIRECT, f08c47fec0942fa0
+const ADSENSE_SCRIPT = `<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${ADSENSE_CLIENT}" crossorigin="anonymous"></script>`;
+
+const ADS_TXT = `google.com, pub-5456414339006405, DIRECT, f08c47fec0942fa0
 `;
 
 const ensureDir = async (dir) => {
@@ -60,6 +61,7 @@ const pageShell = ({ title, description, body, canonical }) => `<!doctype html>
     <meta name="robots" content="index,follow" />
     <link rel="canonical" href="${escapeHtml(canonical)}" />
     <link rel="stylesheet" href="../../styles.css" />
+    ${ADSENSE_SCRIPT}
   </head>
   <body>
     <header class="site-header">
