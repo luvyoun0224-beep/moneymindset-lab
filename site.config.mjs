@@ -4,7 +4,7 @@ export default {
   tagline: "네이버 블로그에서 시작한 미국주식, 주식투자, 반도체, 우주 산업 공부를 한 투자자의 관점으로 정리합니다.",
   description:
     "2005년생 개인 투자자가 미국 주식, 주식투자, 반도체, 우주 산업, 한국 시장 이슈를 공부하며 정리하는 투자 노트입니다.",
-  siteUrl: "https://luvyoun0224-beep.github.io/jasonjedi-investing-site",
+  siteUrl: "https://moneymindset-lab.com",
   author: "Jason Jedi",
   email: "luvyoun0224@gmail.com",
   blogUrl: "https://blog.naver.com/jasonjedi",
