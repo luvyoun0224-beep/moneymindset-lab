@@ -65,13 +65,13 @@ const pageShell = ({ title, description, body, canonical }) => `<!doctype html>
     <header class="site-header">
       <a class="brand" href="../../index.html"><img class="brand-avatar" src="../../assets/profile.jpg" alt="" width="44" height="44" /><span><strong>Jason Jedi Investing</strong><small>2005년생 투자 여정</small></span></a>
       <nav class="nav" aria-label="주요 메뉴">
-        <a href="../../#journey">투자 여정</a><a href="../../#research-map">투자 지도</a><a href="../../#latest-notes">최근 기록</a><a href="../../#weekly-note">주간 노트</a><a href="../../posts/">전체 기록</a>
+        <a href="../../#journey">투자 여정</a><a href="../../investing-method.html">투자 방법</a><a href="../../#research-map">투자 지도</a><a href="../../#latest-notes">최근 기록</a><a href="../../#weekly-note">주간 노트</a><a href="../../posts/">전체 기록</a>
       </nav>
     </header>
     <main>${body}</main>
     <footer class="site-footer">
       <p>© <span id="year"></span> Jason Jedi Investing. 개인 투자 기록이며 투자 권유가 아닙니다.</p>
-      <nav><a href="../../privacy.html">개인정보처리방침</a><a href="../../disclaimer.html">투자 고지</a><a href="../../contact.html">문의</a></nav>
+      <nav><a href="../../privacy.html">개인정보처리방침</a><a href="../../disclaimer.html">투자 고지</a><a href="../../editorial-policy.html">편집 원칙</a><a href="../../contact.html">문의</a></nav>
     </footer>
     <script>document.querySelector("#year").textContent = new Date().getFullYear();</script>
   </body>
@@ -277,6 +277,10 @@ const urls = [
   "contact.html",
   "privacy.html",
   "disclaimer.html",
+  "investing-method.html",
+  "semiconductor-cycle.html",
+  "space-economy-notes.html",
+  "editorial-policy.html",
   ...posts.map((post) => post.localPath)
 ];
 

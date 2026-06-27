@@ -10,6 +10,7 @@
 
 - `index.html`: 주식투자 리서치 데스크형 홈페이지
 - `posts/`: RSS 기반 글 요약과 원문 링크
+- `investing-method.html`, `semiconductor-cycle.html`, `space-economy-notes.html`, `editorial-policy.html`: 사이트 안에서 읽는 기본 가이드와 편집 원칙
 - `about.html`, `contact.html`, `privacy.html`, `disclaimer.html`: 소개, 문의, 개인정보처리방침, 투자 고지 페이지
 - `data/posts.json`: 네이버 RSS에서 동기화한 글 데이터
 - `scripts/sync-rss.mjs`: RSS 동기화, 글 페이지, sitemap, robots, ads.txt 생성
@@ -41,6 +42,13 @@ npm run serve
 3. AdSense 승인 전에는 실제 광고 스크립트와 게시자 ID를 넣지 않습니다.
 4. 승인 후에는 본문 흐름을 끊지 않는 위치에만 광고 단위를 넣고, 법적/문의 페이지에는 광고를 두지 않습니다.
 5. `npm run check`로 광고 유도 문구, 확정 수익처럼 보이는 표현, 임시 `ads.txt` 오류를 확인합니다.
+
+## AdSense 신청 전 확인
+
+- AdSense 계정에서 사이트 `https://moneymindset-lab.com`을 추가한 뒤 Google이 제공하는 실제 코드 스니펫만 `<head>`에 넣습니다.
+- 게시자 ID는 AdSense 계정에서 확인한 `pub-` 값만 사용합니다. 예시 ID나 임의 ID를 `ads.txt`에 넣지 않습니다.
+- 개인정보처리방침, 투자 고지, 편집 원칙, 문의 페이지가 모든 주요 화면에서 접근 가능해야 합니다.
+- 사이트가 공사 중처럼 보이지 않도록 홈, 전체 기록, 기본 가이드, 글 상세 페이지가 모두 정상 연결되어야 합니다.
 
 ## 콘텐츠 원칙
 

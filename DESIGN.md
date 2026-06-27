@@ -110,6 +110,8 @@ All spacing derives from a 4px base. Existing CSS already uses a 16/20/24/28/32/
 - **AdSense Slot**: A quiet placeholder inside generated article pages only. It must keep the existing `ad-slot` visual language, avoid click encouragement, and stay away from privacy, disclaimer, contact, and about pages.
 - **Newsletter / Sponsor CTA**: A `monetization-band` or `reader-cta` surface that offers weekly note contact and sponsorship/collaboration contact. Copy should emphasize continued reading and partnership, not guaranteed revenue.
 - **Related Notes Rail**: Generated posts may end with a compact `related-notes` nav back to the archive and research map so readers continue through the site instead of bouncing immediately.
+- **Evergreen Guide Card**: A standard `article-card` used on the homepage to route readers into investing method, semiconductor cycle, space economy, and editorial policy pages. It should feel like a reading path, not a product feature grid.
+- **Evergreen Guide Page**: A `content-page` variant for site-native explanatory pages. It must not contain ad slots before approval and should connect back to related notes or legal/policy pages.
 
 ### Rules
 
