@@ -3,10 +3,10 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>전체 투자 노트 | Jason Jedi Investing</title>
+    <title>전체 투자 기록 | Jason Jedi Investing</title>
     <meta
       name="description"
-      content="Jason Jedi Investing의 미국주식, AI 인프라, 반도체, 우주 경제, 한국 시장 투자 노트 목록입니다."
+      content="2005년생 개인 투자자가 네이버 블로그에서 이어 온 미국주식, 주식투자, 반도체, 우주 경제 투자 기록 전체 목록입니다."
     />
     <meta name="robots" content="index,follow" />
     <link rel="canonical" href="https://luvyoun0224-beep.github.io/jasonjedi-investing-site/posts/" />
@@ -15,29 +15,68 @@
   <body>
     <header class="site-header">
       <a class="brand" href="../index.html">
-        <span class="brand-mark">JJ</span>
+        <img class="brand-avatar" src="../assets/profile.jpg" alt="" width="44" height="44" />
         <span>
           <strong>Jason Jedi Investing</strong>
-          <small>AI 인프라 투자노트</small>
+          <small>2005년생 투자 여정</small>
         </span>
       </a>
       <nav class="nav" aria-label="주요 메뉴">
-        <a href="../posts/">글 목록</a>
-        <a href="../about.html">소개</a>
-        <a href="../disclaimer.html">투자 고지</a>
-        <a href="../contact.html">문의</a>
+        <a href="../#journey">투자 여정</a>
+        <a href="../#research-map">투자 지도</a>
+        <a href="../#latest-notes">최근 기록</a>
+        <a href="../#weekly-note">주간 노트</a>
+        <a href="../posts/" aria-current="page">전체 기록</a>
       </nav>
     </header>
 
     <main>
-      <section class="page-hero">
-        <p class="eyebrow">All Notes</p>
-        <h1>투자 노트 전체 목록</h1>
-        <p>네이버 블로그에 작성한 글을 주제별로 정리한 허브입니다. 원문은 각 글에서 연결됩니다.</p>
+      <section class="page-hero archive-hero">
+        <div>
+          <p class="eyebrow">전체 투자 기록</p>
+          <h1>홈에서 이어지는 2005년생 투자 기록 전체 목록</h1>
+          <p>
+            <span class="lede-line">네이버 블로그 글을 다시 묶은 목차입니다.</span>
+            <span class="lede-line">전체 기록은 홈의 투자 여정에서 이어집니다.</span>
+          </p>
+        </div>
+        <aside class="archive-identity-card" aria-label="작성자 정보">
+          <img src="../assets/profile.jpg" alt="Jason Jedi 캐릭터" width="78" height="78" />
+          <strong>Jason Jedi</strong>
+          <span>네이버 블로그 원문 기반 공개 기록</span>
+          <a class="text-link" href="../#journey">홈의 투자 여정으로</a>
+        </aside>
       </section>
-      <div class="filters" id="filters"></div>
-      <section class="section">
+
+      <section class="section" aria-labelledby="archive-controls-title">
+        <div class="section-heading split">
+          <div>
+            <p class="eyebrow">주제별로 보기</p>
+            <h2 id="archive-controls-title">주제별 투자 기록</h2>
+          </div>
+          <p id="archive-deck">
+            전체 글을 최신순으로 보여줍니다. 필터를 선택하면 해당 투자 주제의 글만 남고,
+            각 요약 페이지에서 네이버 원문으로 이어집니다.
+          </p>
+        </div>
+
+        <div class="filters" id="filters" aria-label="글 주제 필터"></div>
+        <p class="article-meta" id="archive-meta" aria-live="polite"></p>
         <div class="post-grid" id="post-grid" aria-live="polite"></div>
+      </section>
+
+      <section class="monetization-band archive-subscribe" aria-labelledby="archive-subscribe-heading">
+        <div>
+          <p class="eyebrow">Weekly Note</p>
+          <h2 id="archive-subscribe-heading">괜찮은 글만 골라 읽고 싶다면 주간 노트로 이어집니다.</h2>
+          <p>
+            전체 기록은 검색과 필터로 훑고, 더 읽고 싶은 흐름은 이메일 문의나 협업 문의로 이어질 수 있게 정리했습니다.
+          </p>
+        </div>
+        <div class="monetization-actions" aria-label="아카이브 전환">
+          <a class="button primary" href="../index.html#weekly-note">주간 노트 보기</a>
+          <a class="button secondary" href="../contact.html">스폰서/협업 문의</a>
+        </div>
       </section>
     </main>
 
@@ -57,51 +96,137 @@
           : new Intl.DateTimeFormat("ko-KR", { year: "numeric", month: "short", day: "numeric" }).format(date);
       };
 
-      const response = await fetch("../data/posts.json");
-      const { posts, categories } = await response.json();
-      document.querySelector("#year").textContent = String(new Date().getFullYear());
+      const escapeHtml = (value) =>
+        String(value ?? "")
+          .replace(/&/g, "&amp;")
+          .replace(/</g, "&lt;")
+          .replace(/>/g, "&gt;")
+          .replace(/"/g, "&quot;");
+
+      const normalizePath = (value) => String(value ?? "").replace(/^\/+/, "");
 
       const filters = document.querySelector("#filters");
       const grid = document.querySelector("#post-grid");
+      const archiveMeta = document.querySelector("#archive-meta");
+      const archiveDeck = document.querySelector("#archive-deck");
+      document.querySelector("#year").textContent = String(new Date().getFullYear());
+
       let active = "all";
+      let posts = [];
+      let categories = [];
+        let filterOptions = [{ id: "all", label: "전체", description: "전체 기록을 최신순으로 봅니다." }];
+
+      const countFor = (categoryId) =>
+        categoryId === "all" ? posts.length : posts.filter((post) => post.topicId === categoryId).length;
+
+      const categoryFor = (categoryId) =>
+        filterOptions.find((category) => category.id === categoryId) ?? filterOptions[0];
+
+      const latestDateFor = (items) => {
+        const dates = items
+          .map((post) => new Date(post.isoDate))
+          .filter((date) => !Number.isNaN(date.getTime()))
+          .sort((a, b) => b.getTime() - a.getTime());
+        return dates[0] ? formatDate(dates[0].toISOString()) : "새 글 없음";
+      };
 
       const renderFilters = () => {
-        filters.innerHTML = [
-          { id: "all", label: "전체" },
-          ...categories
-        ]
-          .map(
-            (category) =>
-              `<button class="filter-button ${active === category.id ? "active" : ""}" data-filter="${category.id}">${category.label}</button>`
-          )
+        filters.innerHTML = filterOptions
+          .map((category) => {
+            const pressed = active === category.id;
+            return `
+              <button
+                type="button"
+                class="filter-button ${pressed ? "active" : ""}"
+                data-filter="${escapeHtml(category.id)}"
+                aria-pressed="${pressed}"
+                aria-controls="post-grid"
+              >
+                ${escapeHtml(category.label)}
+                <span aria-hidden="true">${countFor(category.id)}</span>
+              </button>
+            `;
+          })
           .join("");
       };
 
+      const updateFilterState = () => {
+        for (const button of filters.querySelectorAll("[data-filter]")) {
+          const pressed = button.dataset.filter === active;
+          button.classList.toggle("active", pressed);
+          button.setAttribute("aria-pressed", String(pressed));
+        }
+      };
+
+      const renderEmptyState = (category) => {
+        grid.innerHTML = `
+          <article class="article-card" data-empty-state="true">
+            <div class="article-meta">
+              <span class="pill">${escapeHtml(category.label)}</span>
+              <span>0편</span>
+            </div>
+            <h3>아직 공개된 노트가 없습니다</h3>
+            <p>선택한 주제에 연결된 글이 생기면 이 아카이브에 자동으로 표시됩니다.</p>
+              <a class="text-link" href="../#journey">홈의 투자 여정으로 돌아가기</a>
+          </article>
+        `;
+      };
+
       const renderPosts = () => {
+        const category = categoryFor(active);
         const visible = active === "all" ? posts : posts.filter((post) => post.topicId === active);
+        archiveDeck.textContent = category.description || "선택한 주제의 기록을 최신순으로 보여줍니다.";
+        archiveMeta.textContent = `${category.label} · ${visible.length}편 · 최신 업데이트 ${latestDateFor(visible)}`;
+
+        if (!visible.length) {
+          renderEmptyState(category);
+          return;
+        }
+
         grid.innerHTML = visible
-          .map(
-            (post) => `
-              <article class="article-card">
+          .map((post, index) => {
+            const href = `../${normalizePath(post.localPath)}`;
+            return `
+              <article class="article-card ${index === 0 ? "featured" : ""}">
                 <div class="article-meta">
-                  <span class="pill">${post.topicLabel}</span>
-                  <span>${formatDate(post.isoDate)}</span>
+                  <span class="pill">${escapeHtml(post.topicLabel || post.category || "투자 노트")}</span>
+                  <time datetime="${escapeHtml(post.isoDate)}">${formatDate(post.isoDate)}</time>
+                  <span>네이버 블로그 원문 기반</span>
                 </div>
-                <h3><a href="../${post.localPath}">${post.title}</a></h3>
-                <p>${post.summary}</p>
+                <h3><a href="${escapeHtml(href)}">${escapeHtml(post.title)}</a></h3>
+                <p>${escapeHtml(post.summary)}</p>
+                <a class="text-link" href="${escapeHtml(href)}" aria-label="${escapeHtml(post.title)} 요약 페이지 보기">
+                  기록 이어보기
+                </a>
               </article>
-            `
-          )
+            `;
+          })
           .join("");
       };
 
       filters.addEventListener("click", (event) => {
-        const button = event.target.closest("[data-filter]");
+        const button = event.target.closest("button[data-filter]");
         if (!button) return;
-        active = button.dataset.filter;
-        renderFilters();
+        active = button.dataset.filter || "all";
+        updateFilterState();
         renderPosts();
       });
+
+      try {
+        const response = await fetch("../data/posts.json");
+        if (!response.ok) throw new Error(`posts.json ${response.status}`);
+        const payload = await response.json();
+        posts = Array.isArray(payload.posts) ? payload.posts : [];
+        categories = Array.isArray(payload.categories) ? payload.categories : [];
+        filterOptions = [
+          { id: "all", label: "전체", description: "전체 기록을 최신순으로 봅니다." },
+          ...categories
+        ];
+      } catch (error) {
+        archiveDeck.textContent = "전체 기록을 불러오지 못했습니다. 잠시 후 다시 확인해 주세요.";
+        posts = [];
+        categories = [];
+      }
 
       renderFilters();
       renderPosts();

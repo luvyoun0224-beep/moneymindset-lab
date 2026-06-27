@@ -1,9 +1,9 @@
 export default {
   siteName: "Jason Jedi Investing",
-  koreanName: "AI 인프라 투자노트",
-  tagline: "미국주식, AI 인프라, 반도체, 우주 산업을 한 투자자의 관점으로 정리합니다.",
+  koreanName: "2005년생 투자 여정",
+  tagline: "네이버 블로그에서 시작한 미국주식, 주식투자, 반도체, 우주 산업 공부를 한 투자자의 관점으로 정리합니다.",
   description:
-    "2005년생 개인 투자자가 미국 주식, AI 인프라, 반도체, 우주 산업, 한국 시장 이슈를 공부하며 정리하는 투자 노트입니다.",
+    "2005년생 개인 투자자가 미국 주식, 주식투자, 반도체, 우주 산업, 한국 시장 이슈를 공부하며 정리하는 투자 노트입니다.",
   siteUrl: "https://luvyoun0224-beep.github.io/jasonjedi-investing-site",
   author: "Jason Jedi",
   email: "luvyoun0224@gmail.com",
@@ -13,9 +13,9 @@ export default {
     "https://blogpfthumb-phinf.pstatic.net/MjAyNTExMjNfMjgw/MDAxNzYzODkzNzk2ODY3.vL6wkTntaJWLZRsxCCCpME2SZHsp0by0-ICbzNsaTLQg.noxq_6-fIcBSkAN-WBpPG6EUQ76HQHk_KceS5PvahxEg.JPEG/profileImage.jpg?type=s1",
   categories: [
     {
-      id: "ai-infrastructure",
-      label: "AI 인프라",
-      description: "GPU, HBM, 데이터센터, 저장장치, 전력처럼 AI 투자 사이클을 움직이는 병목을 추적합니다."
+      id: "stock-investing",
+      label: "주식투자",
+      description: "미국주식, 빅테크, 반도체, 성장주, 시장 이슈를 개인 투자자의 관점으로 추적합니다."
     },
     {
       id: "semiconductors",
