@@ -74,7 +74,7 @@ const cleanKoreanPhrases = [
   "편집 원칙",
   "반도체 사이클",
   "우주 경제",
-  "AdSense 준비 영역",
+  "ADVERTISEMENT",
   "개인정보처리방침",
   "투자 고지",
   "네이버 원문"
@@ -178,8 +178,8 @@ if (!index.content.includes('id="weekly-note"')) {
 }
 
 const generatedSamples = scannedFiles.filter((file) => file.relativePath.startsWith("posts/") && file.relativePath !== "posts/index.html");
-if (!generatedSamples.every((file) => file.content.includes("AdSense 준비 영역") && file.content.includes("주간 노트") && file.content.includes("스폰서/협업 문의"))) {
-  monetizationFailures.push("generated posts: expected AdSense placeholder, weekly note CTA, and sponsor contact link on every generated post.");
+if (!generatedSamples.every((file) => file.content.includes("ADVERTISEMENT") && file.content.includes("주간 노트") && file.content.includes("스폰서/협업 문의"))) {
+  monetizationFailures.push("generated posts: expected neutral advertisement placeholder, weekly note CTA, and sponsor contact link on every generated post.");
 }
 
 const monetizablePages = [

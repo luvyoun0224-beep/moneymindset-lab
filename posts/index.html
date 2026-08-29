@@ -11,25 +11,18 @@
     <meta name="robots" content="index,follow" />
     <link rel="canonical" href="https://moneymindset-lab.com/posts/" />
     <link rel="stylesheet" href="../styles.css" />
+    <link rel="stylesheet" href="../homepage-v2.css" />
+    <link rel="stylesheet" href="../article-v2.css" />
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5456414339006405" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/@phosphor-icons/web@2.1.2"></script>
   </head>
-  <body>
+  <body class="article-v2 archive-v2">
     <header class="site-header">
-      <a class="brand" href="../index.html">
-        <img class="brand-avatar" src="../assets/profile.jpg" alt="" width="44" height="44" />
-        <span>
-          <strong>JasonJedi Research</strong>
-          <small>미래기술 기업 리서치</small>
-        </span>
-      </a>
-      <nav class="nav" aria-label="주요 메뉴">
-        <a href="../#about">투자 여정</a>
-        <a href="../investing-method.html">투자 방법</a>
-        <a href="../#industries">투자 지도</a>
-        <a href="../#companies">최근 기록</a>
-        <a href="../#weekly-note">주간 노트</a>
-        <a href="../posts/" aria-current="page">전체 기록</a>
+      <a class="brand" href="../index.html" aria-label="JasonJedi Research 홈"><strong>JasonJedi Research</strong><span>기술 → 해자 → 창업자 → 성장률 → 현금흐름</span></a>
+      <nav class="main-nav" id="article-nav" aria-label="주요 메뉴">
+        <a href="../#latest">최신 분석</a><a href="../#companies">기업</a><a href="../#industries">산업</a><a href="../investing-method.html">투자 가이드</a><a href="../posts/" aria-current="page">전체 기록</a><a href="../#about">소개</a>
       </nav>
+      <div class="header-actions"><button class="icon-button menu-toggle" id="article-menu-toggle" type="button" aria-label="메뉴 열기" aria-expanded="false"><i class="ph ph-list" aria-hidden="true"></i></button></div>
     </header>
 
     <main>
@@ -83,14 +76,11 @@
     </main>
 
     <footer class="site-footer">
-      <p>© <span id="year"></span> JasonJedi Research. 개인 투자 기록이며 투자 권유가 아닙니다.</p>
-      <nav aria-label="하단 메뉴">
-        <a href="../privacy.html">개인정보처리방침</a>
-        <a href="../disclaimer.html">투자 고지</a>
-        <a href="../editorial-policy.html">편집 원칙</a>
-        <a href="../contact.html">문의</a>
-      </nav>
+      <strong>JasonJedi Research</strong>
+      <nav aria-label="법적 안내"><a href="../about.html">소개</a><a href="../contact.html">문의</a><a href="../privacy.html">개인정보처리방침</a><a href="../disclaimer.html">투자 면책</a></nav>
+      <small>Independent educational investment research. Not investment advice.</small>
     </footer>
+    <script src="../article.js"></script>
     <script type="module">
       const formatDate = (value) => {
         const date = new Date(value);
@@ -112,7 +102,8 @@
       const grid = document.querySelector("#post-grid");
       const archiveMeta = document.querySelector("#archive-meta");
       const archiveDeck = document.querySelector("#archive-deck");
-      document.querySelector("#year").textContent = String(new Date().getFullYear());
+      const year = document.querySelector("#year");
+      if (year) year.textContent = String(new Date().getFullYear());
 
       let active = "all";
       let posts = [];

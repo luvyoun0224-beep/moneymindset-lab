@@ -62,21 +62,28 @@ const pageShell = ({ title, description, body, canonical }) => `<!doctype html>
     <meta name="robots" content="index,follow" />
     <link rel="canonical" href="${escapeHtml(canonical)}" />
     <link rel="stylesheet" href="../../styles.css" />
+    <link rel="stylesheet" href="../../homepage-v2.css" />
+    <link rel="stylesheet" href="../../article-v2.css" />
     ${ADSENSE_SCRIPT}
+    <script src="https://unpkg.com/@phosphor-icons/web@2.1.2"></script>
   </head>
-  <body>
+  <body class="article-v2">
+    <div class="site-shell">
     <header class="site-header">
-      <a class="brand" href="../../index.html"><img class="brand-avatar" src="../../assets/profile.jpg" alt="" width="44" height="44" /><span><strong>JasonJedi Research</strong><small>미래기술 기업 리서치</small></span></a>
-      <nav class="nav" aria-label="주요 메뉴">
-        <a href="../../#about">투자 여정</a><a href="../../investing-method.html">투자 방법</a><a href="../../#industries">투자 지도</a><a href="../../#companies">최근 기록</a><a href="../../#weekly-note">주간 노트</a><a href="../../posts/">전체 기록</a>
+      <a class="brand" href="../../index.html" aria-label="JasonJedi Research 홈"><strong>JasonJedi Research</strong><span>기술 → 해자 → 창업자 → 성장률 → 현금흐름</span></a>
+      <nav class="main-nav" id="article-nav" aria-label="주요 메뉴">
+        <a href="../../#latest">최신 분석</a><a href="../../#companies">기업</a><a href="../../#industries">산업</a><a href="../../investing-method.html">투자 가이드</a><a href="../../posts/">전체 기록</a><a href="../../#about">소개</a>
       </nav>
+      <div class="header-actions"><button class="icon-button menu-toggle" id="article-menu-toggle" type="button" aria-label="메뉴 열기" aria-expanded="false"><i class="ph ph-list" aria-hidden="true"></i></button></div>
     </header>
     <main>${body}</main>
     <footer class="site-footer">
-      <p>© <span id="year"></span> JasonJedi Research. 개인 투자 기록이며 투자 권유가 아닙니다.</p>
-      <nav><a href="../../privacy.html">개인정보처리방침</a><a href="../../disclaimer.html">투자 고지</a><a href="../../editorial-policy.html">편집 원칙</a><a href="../../contact.html">문의</a></nav>
+      <strong>JasonJedi Research</strong>
+      <nav aria-label="법적 안내"><a href="../../about.html">소개</a><a href="../../contact.html">문의</a><a href="../../privacy.html">개인정보처리방침</a><a href="../../disclaimer.html">투자 면책</a></nav>
+      <small>Independent educational investment research. Not investment advice.</small>
     </footer>
-    <script>document.querySelector("#year").textContent = new Date().getFullYear();</script>
+    </div>
+    <script src="../../article.js"></script>
   </body>
 </html>`;
 
@@ -164,7 +171,10 @@ const posts = itemMatches.slice(0, 50).map((match, index) => {
   const item = match[1];
   const title = stripTags(pick(item, "title"));
   const rawDescription = pick(item, "description");
-  const summary = stripTags(rawDescription).slice(0, 190);
+  const fullSummary = stripTags(rawDescription);
+  const summary = fullSummary.length > 190
+    ? `${fullSummary.slice(0, 190).replace(/\s+\S*$/, "").trim()}…`
+    : fullSummary;
   const category = stripTags(pick(item, "category")) || "투자 노트";
   const link = decodeEntities(stripTags(pick(item, "link")));
   const pubDate = stripTags(pick(item, "pubDate"));
@@ -213,16 +223,22 @@ for (const post of posts) {
   const frame = frameFor(post);
   const body = `
     <article class="post-body">
-      <section class="page-hero">
-        <p class="eyebrow">${escapeHtml(post.topicLabel)} · ${new Intl.DateTimeFormat("ko-KR", {
+      <section class="article-hero">
+        <div class="article-hero-copy">
+        <p class="micro-label"><span></span>${escapeHtml(post.topicLabel)} · ${new Intl.DateTimeFormat("ko-KR", {
           year: "numeric",
           month: "long",
           day: "numeric"
         }).format(new Date(post.isoDate))}</p>
         <h1>${escapeHtml(post.title)}</h1>
         <p>${escapeHtml(post.summary)}</p>
+        </div>
+        <aside class="article-meta" aria-label="글 메타데이터">
+          <div><span>FRAMEWORK</span><strong>FACT / SCENARIO / JUDGMENT</strong></div>
+          <div><span>TOPIC</span><strong>${escapeHtml(post.topicLabel)}</strong></div>
+          <div><span>READING RULE</span><strong>공식 자료와 반대 논리를 함께 확인합니다.</strong></div>
+        </aside>
       </section>
-      <section class="ad-slot" aria-label="광고 영역"><span>AdSense 준비 영역</span></section>
       <section class="content-page">
         <h2>핵심 요약</h2>
         <p>
@@ -230,6 +246,7 @@ for (const post of posts) {
           전체 문장과 세부 근거는 네이버 원문에서 확인할 수 있습니다.
         </p>
         <p class="callout">${escapeHtml(post.summary)}</p>
+        <div class="ad-slot article-ad-slot" aria-label="광고 영역"><span>ADVERTISEMENT</span></div>
         <h2>왜 중요한가</h2>
         <p>${escapeHtml(frame.why)}</p>
         <h2>투자자가 볼 체크포인트</h2>
