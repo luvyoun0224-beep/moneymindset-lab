@@ -18,7 +18,11 @@ const required = [
   "semiconductor-cycle.html",
   "space-economy-notes.html",
   "editorial-policy.html",
+  "research/index.html",
+  "research/broadcom-ai-infrastructure/index.html",
+  "research/planet-labs-contract-economics/index.html",
   "data/posts.json",
+  "data/research.json",
   "sitemap.xml",
   "robots.txt",
   "ads.txt"
@@ -55,8 +59,12 @@ const coreTextFiles = [
   "semiconductor-cycle.html",
   "space-economy-notes.html",
   "editorial-policy.html",
+  "research/index.html",
+  "research/broadcom-ai-infrastructure/index.html",
+  "research/planet-labs-contract-economics/index.html",
   "site.config.mjs",
   "data/posts.json",
+  "data/research.json",
   "README.md"
 ];
 
@@ -163,6 +171,20 @@ if (missingCleanPhrases.length) {
 }
 
 const monetizationFailures = [];
+
+for (const deepResearchPage of [
+  "research/broadcom-ai-infrastructure/index.html",
+  "research/planet-labs-contract-economics/index.html"
+]) {
+  const page = scannedFiles.find((file) => file.relativePath === deepResearchPage);
+  const textLength = page
+    ? page.content.replace(/<script[\s\S]*?<\/script>/gi, " ").replace(/<style[\s\S]*?<\/style>/gi, " ").replace(/<[^>]+>/g, " ").replace(/\s+/g, " ").trim().length
+    : 0;
+  if (textLength < 7000) {
+    monetizationFailures.push(`${deepResearchPage}: expected at least 7,000 characters of independent research, found ${textLength}.`);
+  }
+}
+
 for (const file of scannedFiles.filter((item) => item.relativePath !== "data/posts.json")) {
   for (const phrase of forbiddenMonetizationPhrases) {
     const index = file.content.indexOf(phrase);
@@ -178,17 +200,23 @@ if (!index.content.includes('id="weekly-note"')) {
 }
 
 const generatedSamples = scannedFiles.filter((file) => file.relativePath.startsWith("posts/") && file.relativePath !== "posts/index.html");
-if (!generatedSamples.every((file) => file.content.includes("ADVERTISEMENT") && file.content.includes("주간 노트") && file.content.includes("스폰서/협업 문의"))) {
-  monetizationFailures.push("generated posts: expected neutral advertisement placeholder, weekly note CTA, and sponsor contact link on every generated post.");
+if (!generatedSamples.every((file) => file.content.includes('content="noindex,follow"') && !file.content.includes(`client=${adsenseClient}`) && !file.content.includes("article-ad-slot") && file.content.includes("NAVER BRIEF"))) {
+  monetizationFailures.push("generated RSS briefs: expected noindex, no AdSense client, no ad slot, and NAVER BRIEF label on every page.");
+}
+
+const briefArchive = scannedFiles.find((file) => file.relativePath === "posts/index.html");
+if (!briefArchive?.content.includes('content="noindex,follow"') || briefArchive.content.includes(`client=${adsenseClient}`)) {
+  monetizationFailures.push("posts/index.html: expected noindex and no AdSense client for the RSS brief archive.");
 }
 
 const monetizablePages = [
   "index.html",
-  "posts/index.html",
   "investing-method.html",
   "semiconductor-cycle.html",
   "space-economy-notes.html",
-  ...generatedSamples.map((file) => file.relativePath)
+  "research/index.html",
+  "research/broadcom-ai-infrastructure/index.html",
+  "research/planet-labs-contract-economics/index.html"
 ];
 for (const monetizablePage of monetizablePages) {
   const page = scannedFiles.find((file) => file.relativePath === monetizablePage);

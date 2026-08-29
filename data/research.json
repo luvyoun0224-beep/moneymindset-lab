@@ -1,0 +1,57 @@
+{
+  "generatedAt": "2026-08-30T05:25:00+09:00",
+  "articles": [
+    {
+      "id": "broadcom-ai-infrastructure",
+      "type": "research",
+      "featured": true,
+      "category": "AI 반도체",
+      "title": "브로드컴 AI 인프라 해부: 맞춤형 가속기·네트워킹·VMware가 한 회사에 묶인 이유",
+      "homeTitle": "브로드컴 AI 인프라 해부: 맞춤형 가속기·네트워크·VMware",
+      "summary": "브로드컴을 엔비디아의 대체 칩 회사로만 보면 놓치는 부분이 많습니다. 맞춤형 가속기, 데이터센터 네트워크, VMware 소프트웨어와 현금흐름이 어떻게 하나의 사업 구조를 만드는지 분석합니다.",
+      "published": "2026-08-30",
+      "localPath": "research/broadcom-ai-infrastructure/",
+      "focus": "맞춤형 AI 가속기 · 네트워킹 · VMware · 현금흐름",
+      "readTime": "약 24분"
+    },
+    {
+      "id": "planet-labs-contract-economics",
+      "type": "research",
+      "featured": false,
+      "category": "우주 데이터",
+      "title": "Planet Labs 정부계약을 매출로 읽는 법: RPO·백로그·위성투자·현금흐름",
+      "homeTitle": "Planet Labs 계약 경제성: RPO·백로그·위성투자·현금흐름",
+      "summary": "정부 조달의 최대값은 곧 매출이 아닙니다. 독일 프레임워크 계약이 실제 주문, RPO, 백로그, 매출 인식과 현금흐름으로 바뀌는 과정을 단계별로 분리합니다.",
+      "published": "2026-08-30",
+      "localPath": "research/planet-labs-contract-economics/",
+      "focus": "정부계약 · RPO · 백로그 · Pelican · 자본효율",
+      "readTime": "약 25분"
+    },
+    {
+      "id": "investment-method",
+      "type": "guide",
+      "featured": false,
+      "category": "투자 가이드",
+      "title": "뉴스를 투자 가설로 바꾸는 방법",
+      "homeTitle": "뉴스를 투자 가설로 바꾸는 방법",
+      "summary": "뉴스, 숫자, 산업의 병목과 무효화 조건을 어떤 순서로 확인하는지 정리한 JasonJedi Research의 읽기 방법입니다.",
+      "published": "2026-06-28",
+      "localPath": "investing-method.html",
+      "focus": "FACT · SCENARIO · JUDGMENT",
+      "readTime": "약 10분"
+    },
+    {
+      "id": "semiconductor-cycle",
+      "type": "guide",
+      "featured": false,
+      "category": "AI 반도체",
+      "title": "AI 반도체 사이클을 읽는 순서",
+      "homeTitle": "AI 반도체 사이클을 읽는 순서",
+      "summary": "GPU, HBM, 패키징, 네트워크와 전력으로 병목이 이동하는 과정을 한 페이지에서 연결합니다.",
+      "published": "2026-06-28",
+      "localPath": "semiconductor-cycle.html",
+      "focus": "GPU · HBM · 네트워크 · 전력",
+      "readTime": "약 12분"
+    }
+  ]
+}

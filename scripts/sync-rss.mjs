@@ -4,10 +4,6 @@ import { fileURLToPath } from "node:url";
 import config from "../site.config.mjs";
 
 const root = path.resolve(fileURLToPath(new URL("..", import.meta.url)));
-const ADSENSE_CLIENT = "ca-pub-5456414339006405";
-
-const ADSENSE_SCRIPT = `<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${ADSENSE_CLIENT}" crossorigin="anonymous"></script>`;
-
 const ADS_TXT = `google.com, pub-5456414339006405, DIRECT, f08c47fec0942fa0
 `;
 
@@ -59,12 +55,11 @@ const pageShell = ({ title, description, body, canonical }) => `<!doctype html>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>${escapeHtml(title)}</title>
     <meta name="description" content="${escapeHtml(description)}" />
-    <meta name="robots" content="index,follow" />
+    <meta name="robots" content="noindex,follow" />
     <link rel="canonical" href="${escapeHtml(canonical)}" />
     <link rel="stylesheet" href="../../styles.css" />
     <link rel="stylesheet" href="../../homepage-v2.css" />
     <link rel="stylesheet" href="../../article-v2.css" />
-    ${ADSENSE_SCRIPT}
     <script src="https://unpkg.com/@phosphor-icons/web@2.1.2"></script>
   </head>
   <body class="article-v2">
@@ -225,7 +220,7 @@ for (const post of posts) {
     <article class="post-body">
       <section class="article-hero">
         <div class="article-hero-copy">
-        <p class="micro-label"><span></span>${escapeHtml(post.topicLabel)} · ${new Intl.DateTimeFormat("ko-KR", {
+        <p class="micro-label"><span></span>NAVER BRIEF · ${escapeHtml(post.topicLabel)} · ${new Intl.DateTimeFormat("ko-KR", {
           year: "numeric",
           month: "long",
           day: "numeric"
@@ -246,7 +241,6 @@ for (const post of posts) {
           전체 문장과 세부 근거는 네이버 원문에서 확인할 수 있습니다.
         </p>
         <p class="callout">${escapeHtml(post.summary)}</p>
-        <div class="ad-slot article-ad-slot" aria-label="광고 영역"><span>ADVERTISEMENT</span></div>
         <h2>왜 중요한가</h2>
         <p>${escapeHtml(frame.why)}</p>
         <h2>투자자가 볼 체크포인트</h2>
@@ -281,7 +275,7 @@ for (const post of posts) {
   await fs.writeFile(
     path.join(postDir, "index.html"),
     pageShell({
-      title: `${post.title} | JasonJedi Research`,
+      title: `네이버 브리프: ${post.title} | JasonJedi Research`,
       description: post.summary,
       canonical: `${config.siteUrl}/${post.localPath}`,
       body
@@ -292,7 +286,6 @@ for (const post of posts) {
 
 const urls = [
   "",
-  "posts/",
   "about.html",
   "contact.html",
   "privacy.html",
@@ -301,7 +294,9 @@ const urls = [
   "semiconductor-cycle.html",
   "space-economy-notes.html",
   "editorial-policy.html",
-  ...posts.map((post) => post.localPath)
+  "research/",
+  "research/broadcom-ai-infrastructure/",
+  "research/planet-labs-contract-economics/"
 ];
 
 await fs.writeFile(

@@ -65,6 +65,24 @@ async function loadPosts() {
   return response.json();
 }
 
+async function loadResearch() {
+  const response = await fetch("data/research.json", { cache: "no-store" });
+  if (!response.ok) throw new Error("research.json load failed");
+  return response.json();
+}
+
+const researchAsPost = (article) => ({
+  title: article.homeTitle ?? article.title,
+  summary: article.summary,
+  topicLabel: article.category,
+  topicId: article.type,
+  isoDate: article.published,
+  localPath: article.localPath,
+  focus: article.focus,
+  readTime: article.readTime,
+  featured: article.featured
+});
+
 function initHomeInteractions(posts) {
   const menu = document.querySelector("#main-nav");
   const menuToggle = document.querySelector("#menu-toggle");
@@ -139,17 +157,21 @@ async function main() {
   const isHomeV2 = document.body.classList.contains("home-v2");
 
   if (isHomeV2) {
-    const featured = posts.find((post) => /브로드컴/.test(post.title)) ?? posts[0];
+    const { articles = [] } = await loadResearch();
+    const researchPosts = articles.map(researchAsPost);
+    const featured = researchPosts.find((post) => post.featured) ?? researchPosts[0];
     if (featured) {
       document.querySelector("#featured-title").textContent = featured.title;
       document.querySelector("#featured-summary").textContent = compactSummary(featured.summary);
       document.querySelector("#featured-link").href = featured.localPath;
       document.querySelector("#featured-date").textContent = formatDate(featured.isoDate, true);
-      document.querySelector("#featured-focus").textContent = `${featured.topicLabel} · 공식 자료 · 투자 조건`;
+      document.querySelector("#featured-focus").textContent = featured.focus;
+      const readTime = document.querySelector("#featured-read-time");
+      if (readTime) readTime.textContent = featured.readTime;
     }
-    latestPosts.innerHTML = posts.length ? posts.slice(0, 4).map(homePostCard).join("") : emptyState("표시할 최근 기록이 아직 없습니다.");
+    latestPosts.innerHTML = researchPosts.length ? researchPosts.slice(0, 4).map(homePostCard).join("") : emptyState("표시할 심층 리서치가 아직 없습니다.");
     topicGrid.innerHTML = categories.length ? categories.slice(0, 4).map(homeTopicCard).join("") : emptyState("리서치 지도를 불러올 수 없습니다.");
-    initHomeInteractions(posts);
+    initHomeInteractions(researchPosts);
     return;
   }
 
