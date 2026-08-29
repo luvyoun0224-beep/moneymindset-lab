@@ -1,8 +1,8 @@
-# Jason Jedi Investing Design System
+# JasonJedi Research Design System
 
 ## 1. Atmosphere & Identity
 
-Jason Jedi Investing should feel like a personal investing journey that has learned the discipline of an stock-investing research notebook: calm, exacting, and editorial, but visibly authored by a 2005-born individual investor whose Naver blog character and archive matter. The signature is the research ledger: graphite type on restrained paper, green conviction signals, gold editorial emphasis, personal identity moments, and data modules that feel tabular rather than dashboard-like.
+JasonJedi Research should feel like a personal investing journey that has learned the discipline of an stock-investing research notebook: calm, exacting, and editorial, but visibly authored by a 2005-born individual investor whose Naver blog character and archive matter. The signature is the research ledger: graphite type on restrained paper, green conviction signals, gold editorial emphasis, personal identity moments, and data modules that feel tabular rather than dashboard-like.
 
 ## 2. Color
 

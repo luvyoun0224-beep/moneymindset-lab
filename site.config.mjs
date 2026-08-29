@@ -1,9 +1,9 @@
 export default {
-  siteName: "Jason Jedi Investing",
-  koreanName: "2005년생 투자 여정",
-  tagline: "네이버 블로그에서 시작한 미국주식, 주식투자, 반도체, 우주 산업 공부를 한 투자자의 관점으로 정리합니다.",
+  siteName: "JasonJedi Research",
+  koreanName: "미래기술 기업 리서치",
+  tagline: "기술, 해자, 창업자, 성장률, 현금흐름으로 미래기술 기업을 분석합니다.",
   description:
-    "2005년생 개인 투자자가 미국 주식, 주식투자, 반도체, 우주 산업, 한국 시장 이슈를 공부하며 정리하는 투자 노트입니다.",
+    "2005년생 개인 투자자가 AI 반도체, 우주 데이터, 바이오, 매크로를 공식 자료와 반대 논리로 검증하는 독립 투자 리서치입니다.",
   siteUrl: "https://moneymindset-lab.com",
   author: "Jason Jedi",
   email: "luvyoun0224@gmail.com",

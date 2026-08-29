@@ -1,11 +1,9 @@
-const formatDate = (value) => {
+const formatDate = (value, long = false) => {
   const date = new Date(value);
   if (Number.isNaN(date.getTime())) return value;
-  return new Intl.DateTimeFormat("ko-KR", {
-    year: "numeric",
-    month: "short",
-    day: "numeric"
-  }).format(date);
+  return new Intl.DateTimeFormat("ko-KR", long
+    ? { year: "numeric", month: "long", day: "numeric" }
+    : { year: "numeric", month: "short", day: "numeric" }).format(date);
 };
 
 const escapeHtml = (value) =>
@@ -16,43 +14,116 @@ const escapeHtml = (value) =>
     .replaceAll('"', "&quot;")
     .replaceAll("'", "&#39;");
 
-const postCard = (post) => `
+const archivePostCard = (post) => `
   <article class="article-card" data-category="${escapeHtml(post.topicId)}">
-    <div class="article-meta">
-      <span class="pill">${escapeHtml(post.topicLabel)}</span>
-      <span>${escapeHtml(formatDate(post.isoDate))}</span>
-    </div>
+    <div class="article-meta"><span class="pill">${escapeHtml(post.topicLabel)}</span><span>${escapeHtml(formatDate(post.isoDate))}</span></div>
     <h3><a href="${escapeHtml(post.localPath)}">${escapeHtml(post.title)}</a></h3>
     <p>${escapeHtml(post.summary)}</p>
-  </article>
-`;
+  </article>`;
 
 const featuredPostCard = (post) => `
   <article class="featured-note-card">
-    <div class="article-meta">
-      <span class="pill">${escapeHtml(post.topicLabel)}</span>
-      <span>${escapeHtml(formatDate(post.isoDate))}</span>
-    </div>
+    <div class="article-meta"><span class="pill">${escapeHtml(post.topicLabel)}</span><span>${escapeHtml(formatDate(post.isoDate))}</span></div>
     <h3><a href="${escapeHtml(post.localPath)}">${escapeHtml(post.title)}</a></h3>
-    <p>${escapeHtml(post.summary)}</p>
-    <a class="text-link" href="${escapeHtml(post.localPath)}">기록 이어보기</a>
-  </article>
-`;
+    <p>${escapeHtml(post.summary)}</p><a class="text-link" href="${escapeHtml(post.localPath)}">기록 이어보기</a>
+  </article>`;
 
-const topicCard = (category, index) => `
-  <article class="topic-card">
-    <span class="lane-number">${String(index + 1).padStart(2, "0")}</span>
-    <strong>${escapeHtml(category.label)}</strong>
-    <p>${escapeHtml(category.description)}</p>
-  </article>
-`;
+const homePostCard = (post) => `
+  <a class="company-item" href="${escapeHtml(post.localPath)}" data-search="${escapeHtml(`${post.title} ${post.topicLabel} ${post.summary}`.toLowerCase())}">
+    <span>${escapeHtml(post.topicLabel.toUpperCase())}</span>
+    <h3>${escapeHtml(post.title)}</h3>
+    <p>${escapeHtml(post.summary)}</p>
+    <footer><small>${escapeHtml(formatDate(post.isoDate))}</small><i class="ph ph-arrow-right" aria-hidden="true"></i></footer>
+  </a>`;
+
+const archiveTopicCard = (category, index) => `
+  <article class="topic-card"><span class="lane-number">${String(index + 1).padStart(2, "0")}</span><strong>${escapeHtml(category.label)}</strong><p>${escapeHtml(category.description)}</p></article>`;
+
+const homeTopicCard = (category, index) => `
+  <a class="company-item topic-item" href="posts/" data-search="${escapeHtml(`${category.label} ${category.description}`.toLowerCase())}">
+    <span>TRACK ${String(index + 1).padStart(2, "0")}</span><h3>${escapeHtml(category.label)}</h3><p>${escapeHtml(category.description)}</p>
+    <footer><small>RESEARCH LANE</small><i class="ph ph-arrow-right" aria-hidden="true"></i></footer>
+  </a>`;
 
 const emptyState = (message) => `<p class="article-card empty-state">${escapeHtml(message)}</p>`;
 
+const questionDetails = {
+  ai: { title: "엔비디아의 독주는 언제까지 지속될까?", copy: "GPU 수요만 보는 대신 데이터센터 네트워크와 전력·냉각까지 연결해 AI 인프라의 다음 병목을 추적합니다." },
+  space: { title: "위성 데이터의 상업화는 어디까지 왔나?", copy: "수주 총액보다 반복 매출, 백로그의 질, 현금흐름 전환 속도를 중심으로 우주 데이터 기업을 비교합니다." },
+  bio: { title: "혁신 신약의 가치, 임상 신호로 판단할 수 있을까?", copy: "한 번의 임상 발표보다 재현성, 규제 경로, 상업화 비용까지 함께 읽는 체크리스트를 제공합니다." }
+};
+
+const compactSummary = (summary) => {
+  const sentences = String(summary ?? "").match(/[^.!?]+[.!?]+/g);
+  if (sentences?.length) return sentences.slice(0, 2).join(" ").trim();
+  return summary.length > 128 ? `${summary.slice(0, 128).trim()}…` : summary;
+};
+
 async function loadPosts() {
-  const response = await fetch("data/posts.json");
+  const response = await fetch("data/posts.json", { cache: "no-store" });
   if (!response.ok) throw new Error("posts.json load failed");
   return response.json();
+}
+
+function initHomeInteractions(posts) {
+  const menu = document.querySelector("#main-nav");
+  const menuToggle = document.querySelector("#menu-toggle");
+  const searchPanel = document.querySelector("#search-panel");
+  const searchToggle = document.querySelector("#search-toggle");
+  const searchInput = document.querySelector("#site-search");
+  const latestPosts = document.querySelector("#latest-posts");
+  const drawer = document.querySelector("#drawer-backdrop");
+
+  menuToggle?.addEventListener("click", () => {
+    const open = menu.classList.toggle("is-open");
+    menuToggle.setAttribute("aria-expanded", String(open));
+    menuToggle.setAttribute("aria-label", open ? "메뉴 닫기" : "메뉴 열기");
+    menuToggle.innerHTML = `<i class="ph ph-${open ? "x" : "list"}" aria-hidden="true"></i>`;
+  });
+
+  menu?.querySelectorAll("a").forEach((link) => link.addEventListener("click", () => {
+    menu.classList.remove("is-open");
+    menuToggle?.setAttribute("aria-expanded", "false");
+    menuToggle?.setAttribute("aria-label", "메뉴 열기");
+  }));
+
+  searchToggle?.addEventListener("click", () => {
+    const willOpen = searchPanel.hidden;
+    searchPanel.hidden = !willOpen;
+    searchToggle.setAttribute("aria-expanded", String(willOpen));
+    searchToggle.setAttribute("aria-label", willOpen ? "검색 닫기" : "검색 열기");
+    searchToggle.innerHTML = `<i class="ph ph-${willOpen ? "x" : "magnifying-glass"}" aria-hidden="true"></i>`;
+    if (willOpen) searchInput.focus();
+    else {
+      searchInput.value = "";
+      latestPosts.innerHTML = posts.slice(0, 4).map(homePostCard).join("");
+    }
+  });
+
+  searchInput?.addEventListener("input", () => {
+    const query = searchInput.value.trim().toLowerCase();
+    const matches = query ? posts.filter((post) => `${post.title} ${post.topicLabel} ${post.summary}`.toLowerCase().includes(query)).slice(0, 4) : posts.slice(0, 4);
+    latestPosts.innerHTML = matches.length ? matches.map(homePostCard).join("") : emptyState("일치하는 리서치가 없습니다.");
+  });
+
+  document.querySelectorAll(".analysis-trigger").forEach((button) => button.addEventListener("click", () => {
+    const detail = questionDetails[button.dataset.question];
+    document.querySelector("#drawer-title").textContent = detail.title;
+    document.querySelector("#drawer-copy").textContent = detail.copy;
+    drawer.hidden = false;
+    drawer.querySelector("#drawer-close").focus();
+  }));
+
+  const closeDrawer = () => { drawer.hidden = true; };
+  document.querySelector("#drawer-close")?.addEventListener("click", closeDrawer);
+  drawer?.addEventListener("click", (event) => { if (event.target === drawer) closeDrawer(); });
+  document.addEventListener("keydown", (event) => { if (event.key === "Escape" && drawer && !drawer.hidden) closeDrawer(); });
+
+  document.querySelector("#weekly-note")?.addEventListener("submit", (event) => {
+    event.preventDefault();
+    document.querySelector("#newsletter-status").hidden = false;
+    event.currentTarget.querySelector(".email-row").hidden = true;
+  });
 }
 
 async function main() {
@@ -62,42 +133,39 @@ async function main() {
   const topicGrid = document.querySelector("#topic-grid");
   const featuredPost = document.querySelector("#featured-post");
   const latestPosts = document.querySelector("#latest-posts");
-
   if (!topicGrid && !featuredPost && !latestPosts) return;
 
   const { posts = [], categories = [] } = await loadPosts();
+  const isHomeV2 = document.body.classList.contains("home-v2");
 
-  if (topicGrid) {
-    topicGrid.innerHTML = categories.length
-      ? categories.map(topicCard).join("")
-      : emptyState("리서치 레인을 불러올 수 없습니다.");
+  if (isHomeV2) {
+    const featured = posts.find((post) => /브로드컴/.test(post.title)) ?? posts[0];
+    if (featured) {
+      document.querySelector("#featured-title").textContent = featured.title;
+      document.querySelector("#featured-summary").textContent = compactSummary(featured.summary);
+      document.querySelector("#featured-link").href = featured.localPath;
+      document.querySelector("#featured-date").textContent = formatDate(featured.isoDate, true);
+      document.querySelector("#featured-focus").textContent = `${featured.topicLabel} · 공식 자료 · 투자 조건`;
+    }
+    latestPosts.innerHTML = posts.length ? posts.slice(0, 4).map(homePostCard).join("") : emptyState("표시할 최근 기록이 아직 없습니다.");
+    topicGrid.innerHTML = categories.length ? categories.slice(0, 4).map(homeTopicCard).join("") : emptyState("리서치 지도를 불러올 수 없습니다.");
+    initHomeInteractions(posts);
+    return;
   }
 
-  if (featuredPost) {
-    featuredPost.innerHTML = posts[0]
-      ? featuredPostCard(posts[0])
-      : emptyState("표시할 최신 노트가 아직 없습니다.");
-  }
-
+  if (topicGrid) topicGrid.innerHTML = categories.length ? categories.map(archiveTopicCard).join("") : emptyState("리서치 레인을 불러올 수 없습니다.");
+  if (featuredPost) featuredPost.innerHTML = posts[0] ? featuredPostCard(posts[0]) : emptyState("표시할 최신 노트가 아직 없습니다.");
   if (latestPosts) {
     const notes = posts.length > 1 ? posts.slice(1, 7) : posts.slice(0, 6);
-    latestPosts.innerHTML = notes.length
-      ? notes.map(postCard).join("")
-      : emptyState("표시할 최근 노트가 아직 없습니다.");
+    latestPosts.innerHTML = notes.length ? notes.map(archivePostCard).join("") : emptyState("표시할 최근 노트가 아직 없습니다.");
   }
 }
 
 main().catch((error) => {
   console.error(error);
-  const featuredPost = document.querySelector("#featured-post");
-  const latestPosts = document.querySelector("#latest-posts");
   const message = "전체 기록을 불러오지 못했습니다. 잠시 뒤 다시 확인해 주세요.";
-
-  if (featuredPost) {
-    featuredPost.innerHTML = emptyState(message);
-  }
-
-  if (latestPosts) {
-    latestPosts.innerHTML = emptyState(message);
+  for (const selector of ["#featured-post", "#latest-posts"]) {
+    const target = document.querySelector(selector);
+    if (target) target.innerHTML = emptyState(message);
   }
 });
