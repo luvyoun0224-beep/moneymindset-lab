@@ -21,6 +21,7 @@ const required = [
   "research/index.html",
   "research/broadcom-ai-infrastructure/index.html",
   "research/planet-labs-contract-economics/index.html",
+  "research/palantir-rule-of-40-valuation/index.html",
   "data/posts.json",
   "data/research.json",
   "sitemap.xml",
@@ -62,6 +63,7 @@ const coreTextFiles = [
   "research/index.html",
   "research/broadcom-ai-infrastructure/index.html",
   "research/planet-labs-contract-economics/index.html",
+  "research/palantir-rule-of-40-valuation/index.html",
   "site.config.mjs",
   "data/posts.json",
   "data/research.json",
@@ -175,6 +177,7 @@ const monetizationFailures = [];
 for (const deepResearchPage of [
   "research/broadcom-ai-infrastructure/index.html",
   "research/planet-labs-contract-economics/index.html"
+  ,"research/palantir-rule-of-40-valuation/index.html"
 ]) {
   const page = scannedFiles.find((file) => file.relativePath === deepResearchPage);
   const textLength = page
@@ -217,6 +220,7 @@ const monetizablePages = [
   "research/index.html",
   "research/broadcom-ai-infrastructure/index.html",
   "research/planet-labs-contract-economics/index.html"
+  ,"research/palantir-rule-of-40-valuation/index.html"
 ];
 for (const monetizablePage of monetizablePages) {
   const page = scannedFiles.find((file) => file.relativePath === monetizablePage);

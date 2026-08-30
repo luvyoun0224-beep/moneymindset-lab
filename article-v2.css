@@ -210,6 +210,25 @@
 .answer-box .micro-label { margin-bottom: 16px; }
 .answer-box > p:last-child { margin: 0; color: #1c304f; }
 
+.research-figure {
+  margin: 56px 0 64px;
+}
+
+.research-figure img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border: 1px solid #d8dde5;
+  border-radius: 18px;
+}
+
+.research-figure figcaption {
+  margin-top: 14px;
+  color: #667085;
+  font-size: 0.9rem;
+  line-height: 1.65;
+}
+
 .research-v2 table {
   width: 100%;
   margin: 24px 0 34px;

@@ -297,6 +297,7 @@ const urls = [
   "research/",
   "research/broadcom-ai-infrastructure/",
   "research/planet-labs-contract-economics/"
+  ,"research/palantir-rule-of-40-valuation/"
 ];
 
 await fs.writeFile(

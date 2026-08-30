@@ -1,10 +1,23 @@
 {
-  "generatedAt": "2026-08-30T05:25:00+09:00",
+  "generatedAt": "2026-08-31T00:55:00+09:00",
   "articles": [
+    {
+      "id": "palantir-rule-of-40-valuation",
+      "type": "research",
+      "featured": true,
+      "category": "AI 소프트웨어",
+      "title": "팔란티어 186달러의 기대치 해부: 93% 성장·Rule of 40·계약가치·SBC",
+      "homeTitle": "팔란티어 186달러: 93% 성장과 Rule of 40의 가격",
+      "summary": "매출 93% 성장과 Rule of 40 155%만으로 현재 가격을 설명할 수 있을까요. 미국 상업 성장, SBC, 계약 전환, 현금흐름과 약 54.9배의 거친 시총/매출 가이드를 함께 분석합니다.",
+      "published": "2026-08-31",
+      "localPath": "research/palantir-rule-of-40-valuation/",
+      "focus": "AIP · 미국 상업 · Rule of 40 · SBC · 계약 전환",
+      "readTime": "약 28분"
+    },
     {
       "id": "broadcom-ai-infrastructure",
       "type": "research",
-      "featured": true,
+      "featured": false,
       "category": "AI 반도체",
       "title": "브로드컴 AI 인프라 해부: 맞춤형 가속기·네트워킹·VMware가 한 회사에 묶인 이유",
       "homeTitle": "브로드컴 AI 인프라 해부: 맞춤형 가속기·네트워크·VMware",
