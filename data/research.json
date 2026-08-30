@@ -1,10 +1,23 @@
 {
-  "generatedAt": "2026-08-31T00:55:00+09:00",
+  "generatedAt": "2026-08-31T08:45:00+09:00",
   "articles": [
+    {
+      "id": "us-jobs-report-growth-stocks-2026-09",
+      "type": "research",
+      "featured": true,
+      "category": "미국 매크로",
+      "title": "미국 고용 데이터 읽는 법: JOLTS·ISM·비농업 고용에서 성장주까지",
+      "homeTitle": "미국 고용 데이터: JOLTS·ISM·비농업 고용 읽는 법",
+      "summary": "9월 고용지표의 한국시간 발표 일정부터 JOLTS·ISM·비농업 고용의 측정 차이, 연준 기대와 성장주 할인율의 조건부 경로까지 공식 자료로 연결합니다.",
+      "published": "2026-08-31",
+      "localPath": "research/us-jobs-report-growth-stocks-2026-09/",
+      "focus": "JOLTS · ISM · 비농업 고용 · FOMC · 할인율",
+      "readTime": "약 27분"
+    },
     {
       "id": "palantir-rule-of-40-valuation",
       "type": "research",
-      "featured": true,
+      "featured": false,
       "category": "AI 소프트웨어",
       "title": "팔란티어 186달러의 기대치 해부: 93% 성장·Rule of 40·계약가치·SBC",
       "homeTitle": "팔란티어 186달러: 93% 성장과 Rule of 40의 가격",

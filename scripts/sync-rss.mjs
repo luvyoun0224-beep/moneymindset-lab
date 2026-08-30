@@ -298,6 +298,7 @@ const urls = [
   "research/broadcom-ai-infrastructure/",
   "research/planet-labs-contract-economics/"
   ,"research/palantir-rule-of-40-valuation/"
+  ,"research/us-jobs-report-growth-stocks-2026-09/"
 ];
 
 await fs.writeFile(
