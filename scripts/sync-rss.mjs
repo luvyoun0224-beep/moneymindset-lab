@@ -299,7 +299,16 @@ const urls = [
   "research/planet-labs-contract-economics/"
   ,"research/palantir-rule-of-40-valuation/"
   ,"research/us-jobs-report-growth-stocks-2026-09/"
+  ,"research/us-labor-day-market-holiday-2026/"
+  ,"research/planet-labs-fy2027-q2-earnings-preview/"
 ];
+
+const koreaDate = new Intl.DateTimeFormat("en-CA", {
+  timeZone: "Asia/Seoul",
+  year: "numeric",
+  month: "2-digit",
+  day: "2-digit"
+}).format(new Date());
 
 await fs.writeFile(
   path.join(root, "sitemap.xml"),
@@ -309,7 +318,7 @@ ${urls
   .map(
     (url) => `  <url>
     <loc>${config.siteUrl}/${url}</loc>
-    <lastmod>${new Date().toISOString().slice(0, 10)}</lastmod>
+    <lastmod>${koreaDate}</lastmod>
   </url>`
   )
   .join("\n")}

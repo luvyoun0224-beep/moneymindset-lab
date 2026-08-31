@@ -23,6 +23,8 @@ const required = [
   "research/planet-labs-contract-economics/index.html",
   "research/palantir-rule-of-40-valuation/index.html",
   "research/us-jobs-report-growth-stocks-2026-09/index.html",
+  "research/us-labor-day-market-holiday-2026/index.html",
+  "research/planet-labs-fy2027-q2-earnings-preview/index.html",
   "data/posts.json",
   "data/research.json",
   "sitemap.xml",
@@ -66,6 +68,8 @@ const coreTextFiles = [
   "research/planet-labs-contract-economics/index.html",
   "research/palantir-rule-of-40-valuation/index.html",
   "research/us-jobs-report-growth-stocks-2026-09/index.html",
+  "research/us-labor-day-market-holiday-2026/index.html",
+  "research/planet-labs-fy2027-q2-earnings-preview/index.html",
   "site.config.mjs",
   "data/posts.json",
   "data/research.json",
@@ -181,6 +185,8 @@ for (const deepResearchPage of [
   "research/planet-labs-contract-economics/index.html"
   ,"research/palantir-rule-of-40-valuation/index.html"
   ,"research/us-jobs-report-growth-stocks-2026-09/index.html"
+  ,"research/us-labor-day-market-holiday-2026/index.html"
+  ,"research/planet-labs-fy2027-q2-earnings-preview/index.html"
 ]) {
   const page = scannedFiles.find((file) => file.relativePath === deepResearchPage);
   const textLength = page
@@ -228,6 +234,8 @@ const monetizablePages = [
   "research/planet-labs-contract-economics/index.html"
   ,"research/palantir-rule-of-40-valuation/index.html"
   ,"research/us-jobs-report-growth-stocks-2026-09/index.html"
+  ,"research/us-labor-day-market-holiday-2026/index.html"
+  ,"research/planet-labs-fy2027-q2-earnings-preview/index.html"
 ];
 for (const monetizablePage of monetizablePages) {
   const page = scannedFiles.find((file) => file.relativePath === monetizablePage);
