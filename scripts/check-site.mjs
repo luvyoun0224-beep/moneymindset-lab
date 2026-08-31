@@ -192,6 +192,9 @@ for (const deepResearchPage of [
 }
 
 for (const file of scannedFiles.filter((item) => item.relativePath !== "data/posts.json")) {
+  if (file.content.includes("<del>")) {
+    monetizationFailures.push(`${file.relativePath}: unexpected <del> tag; numeric ranges may have been parsed as Markdown strikethrough.`);
+  }
   for (const phrase of forbiddenMonetizationPhrases) {
     const index = file.content.indexOf(phrase);
     if (index !== -1) {
