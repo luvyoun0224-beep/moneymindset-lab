@@ -4,7 +4,6 @@
     {
       "id": "planet-labs-fy2027-q2-earnings-preview",
       "type": "research",
-      "featured": true,
       "category": "우주 데이터",
       "title": "플래닛랩스 FY2027 Q2 실적 프리뷰: 계약잔고가 현금으로 바뀌는가",
       "homeTitle": "플래닛랩스 Q2: 계약잔고가 현금으로 바뀌는가",
@@ -12,12 +11,14 @@
       "published": "2026-09-01",
       "localPath": "research/planet-labs-fy2027-q2-earnings-preview/",
       "focus": "RPO · 백로그 · Pelican · 총마진 · 현금흐름",
-      "readTime": "약 30분"
+      "readTime": "약 30분",
+      "heroImage": "assets/research/planet-q2-preview/01-hero.png",
+      "heroAlt": "지구관측 위성과 반복 데이터가 농업·재난·국방 의사결정으로 연결되는 장면",
+      "analystNote": "RPO·백로그가 매출·마진·현금흐름으로 전환되는 속도와 Pelican 투자 부담을 함께 확인합니다."
     },
     {
       "id": "us-labor-day-market-holiday-2026",
       "type": "research",
-      "featured": false,
       "category": "미국 매크로",
       "title": "2026 미국 노동절 휴장 완전정리: 거래·주문·T+1 결제의 경계",
       "homeTitle": "2026 미국 노동절 휴장: 주문·T+1 결제의 경계",
@@ -25,12 +26,14 @@
       "published": "2026-09-01",
       "localPath": "research/us-labor-day-market-holiday-2026/",
       "focus": "NYSE · Nasdaq · T+1 · 상품별 예외 · 재개일",
-      "readTime": "약 26분"
+      "readTime": "약 26분",
+      "heroImage": "assets/research/us-labor-day/01-hero.png",
+      "heroAlt": "노동절에 휴장한 월스트리트와 다음 거래세션을 확인하는 한국 투자자",
+      "analystNote": "전일 휴장, 주문 유효기간, T+1 결제와 상품별 예외를 분리해 운영 실수를 줄입니다."
     },
     {
       "id": "us-jobs-report-growth-stocks-2026-09",
       "type": "research",
-      "featured": false,
       "category": "미국 매크로",
       "title": "미국 고용 데이터 읽는 법: JOLTS·ISM·비농업 고용에서 성장주까지",
       "homeTitle": "미국 고용 데이터: JOLTS·ISM·비농업 고용 읽는 법",
@@ -38,12 +41,14 @@
       "published": "2026-08-31",
       "localPath": "research/us-jobs-report-growth-stocks-2026-09/",
       "focus": "JOLTS · ISM · 비농업 고용 · FOMC · 할인율",
-      "readTime": "약 27분"
+      "readTime": "약 27분",
+      "heroImage": "assets/research/us-jobs-report/01-hero.png",
+      "heroAlt": "미국 고용 데이터가 금리와 성장주 할인율로 전달되는 시장 분석 장면",
+      "analystNote": "JOLTS·ISM·비농업 고용의 측정 차이를 구분하고 금리 기대가 성장주로 전달되는 조건을 점검합니다."
     },
     {
       "id": "palantir-rule-of-40-valuation",
       "type": "research",
-      "featured": false,
       "category": "AI 소프트웨어",
       "title": "팔란티어 186달러의 기대치 해부: 93% 성장·Rule of 40·계약가치·SBC",
       "homeTitle": "팔란티어 186달러: 93% 성장과 Rule of 40의 가격",
@@ -51,12 +56,14 @@
       "published": "2026-08-31",
       "localPath": "research/palantir-rule-of-40-valuation/",
       "focus": "AIP · 미국 상업 · Rule of 40 · SBC · 계약 전환",
-      "readTime": "약 28분"
+      "readTime": "약 28분",
+      "heroImage": "assets/research/palantir-rule40/01-hero.png",
+      "heroAlt": "기업과 정부의 데이터를 운영 의사결정으로 연결하는 AI 플랫폼",
+      "analystNote": "성장률과 비GAAP 수익성뿐 아니라 SBC·계약 전환·현금흐름이 주당 가치로 남는지 확인합니다."
     },
     {
       "id": "broadcom-ai-infrastructure",
       "type": "research",
-      "featured": false,
       "category": "AI 반도체",
       "title": "브로드컴 AI 인프라 해부: 맞춤형 가속기·네트워킹·VMware가 한 회사에 묶인 이유",
       "homeTitle": "브로드컴 AI 인프라 해부: 맞춤형 가속기·네트워크·VMware",
@@ -64,12 +71,14 @@
       "published": "2026-08-30",
       "localPath": "research/broadcom-ai-infrastructure/",
       "focus": "맞춤형 AI 가속기 · 네트워킹 · VMware · 현금흐름",
-      "readTime": "약 24분"
+      "readTime": "약 24분",
+      "heroImage": "assets/broadcom-headquarters.png",
+      "heroAlt": "브로드컴 로고가 설치된 유리 외벽의 기술 기업 본사",
+      "analystNote": "맞춤형 가속기·네트워킹·VMware가 하나의 AI 인프라 현금흐름으로 연결되는지 확인합니다."
     },
     {
       "id": "planet-labs-contract-economics",
       "type": "research",
-      "featured": false,
       "category": "우주 데이터",
       "title": "Planet Labs 정부계약을 매출로 읽는 법: RPO·백로그·위성투자·현금흐름",
       "homeTitle": "Planet Labs 계약 경제성: RPO·백로그·위성투자·현금흐름",
@@ -82,7 +91,6 @@
     {
       "id": "investment-method",
       "type": "guide",
-      "featured": false,
       "category": "투자 가이드",
       "title": "뉴스를 투자 가설로 바꾸는 방법",
       "homeTitle": "뉴스를 투자 가설로 바꾸는 방법",
@@ -95,7 +103,6 @@
     {
       "id": "semiconductor-cycle",
       "type": "guide",
-      "featured": false,
       "category": "AI 반도체",
       "title": "AI 반도체 사이클을 읽는 순서",
       "homeTitle": "AI 반도체 사이클을 읽는 순서",

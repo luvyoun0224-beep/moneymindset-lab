@@ -76,12 +76,32 @@ const researchAsPost = (article) => ({
   summary: article.summary,
   topicLabel: article.category,
   topicId: article.type,
-  isoDate: article.published,
+  isoDate: article.publishedAt ?? article.published,
   localPath: article.localPath,
   focus: article.focus,
   readTime: article.readTime,
-  featured: article.featured
+  heroImage: article.heroImage,
+  heroAlt: article.heroAlt,
+  analystNote: article.analystNote
 });
+
+const selectLatestResearch = (articles = []) =>
+  articles
+    .map((article, index) => ({ article, index }))
+    .filter(({ article }) => article.type === "research")
+    .sort((a, b) => {
+      const aTime = new Date(a.article.publishedAt ?? a.article.published).getTime() || 0;
+      const bTime = new Date(b.article.publishedAt ?? b.article.published).getTime() || 0;
+      return bTime - aTime || a.index - b.index;
+    })
+    .map(({ article }) => article)[0];
+
+const latestLabel = (value) => {
+  const parts = new Intl.DateTimeFormat("en-CA", { month: "2-digit", day: "2-digit" }).formatToParts(new Date(value));
+  const month = parts.find((part) => part.type === "month")?.value ?? "--";
+  const day = parts.find((part) => part.type === "day")?.value ?? "--";
+  return `LATEST · ${month}.${day}`;
+};
 
 function initHomeInteractions(posts) {
   const menu = document.querySelector("#main-nav");
@@ -159,7 +179,8 @@ async function main() {
   if (isHomeV2) {
     const { articles = [] } = await loadResearch();
     const researchPosts = articles.map(researchAsPost);
-    const featured = researchPosts.find((post) => post.featured) ?? researchPosts[0];
+    const latestResearch = selectLatestResearch(articles);
+    const featured = latestResearch ? researchAsPost(latestResearch) : null;
     if (featured) {
       document.querySelector("#featured-title").textContent = featured.title;
       document.querySelector("#featured-summary").textContent = compactSummary(featured.summary);
@@ -168,6 +189,17 @@ async function main() {
       document.querySelector("#featured-focus").textContent = featured.focus;
       const readTime = document.querySelector("#featured-read-time");
       if (readTime) readTime.textContent = featured.readTime;
+      const featuredImage = document.querySelector("#featured-image");
+      if (featuredImage && featured.heroImage) {
+        featuredImage.src = featured.heroImage;
+        featuredImage.alt = featured.heroAlt ?? featured.title;
+      }
+      const featuredCase = document.querySelector("#featured-case");
+      if (featuredCase) featuredCase.textContent = latestLabel(featured.isoDate);
+      const analystNote = document.querySelector("#featured-analyst-note");
+      if (analystNote) analystNote.textContent = featured.analystNote ?? featured.summary;
+      const ogImage = document.querySelector('meta[property="og:image"]');
+      if (ogImage && featured.heroImage) ogImage.content = new URL(featured.heroImage, window.location.href).href;
     }
     latestPosts.innerHTML = researchPosts.length ? researchPosts.slice(0, 4).map(homePostCard).join("") : emptyState("표시할 심층 리서치가 아직 없습니다.");
     topicGrid.innerHTML = categories.length ? categories.slice(0, 4).map(homeTopicCard).join("") : emptyState("리서치 지도를 불러올 수 없습니다.");

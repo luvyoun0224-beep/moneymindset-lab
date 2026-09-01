@@ -2,6 +2,7 @@ import fs from "node:fs/promises";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
 import config from "../site.config.mjs";
+import { syncFeaturedHomepage } from "./featured-home.mjs";
 
 const root = path.resolve(fileURLToPath(new URL("..", import.meta.url)));
 const ADS_TXT = `google.com, pub-5456414339006405, DIRECT, f08c47fec0942fa0
@@ -343,4 +344,7 @@ await fs.writeFile(
   "utf8"
 );
 
-console.log(`Synced ${posts.length} posts from ${config.rssUrl}`);
+const researchData = JSON.parse(await fs.readFile(path.join(root, "data", "research.json"), "utf8"));
+const latestResearch = await syncFeaturedHomepage(root, researchData);
+
+console.log(`Synced ${posts.length} posts from ${config.rssUrl}; homepage featured ${latestResearch.id}`);

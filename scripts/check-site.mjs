@@ -1,6 +1,7 @@
 import fs from "node:fs/promises";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
+import { selectLatestResearch } from "./featured-home.mjs";
 
 const root = path.resolve(fileURLToPath(new URL("..", import.meta.url)));
 const adsenseClient = "ca-pub-5456414339006405";
@@ -49,6 +50,31 @@ if (missing.length) {
 const posts = JSON.parse(await fs.readFile(path.join(root, "data", "posts.json"), "utf8"));
 if (!Array.isArray(posts.posts) || posts.posts.length < 10) {
   console.error("Expected at least 10 RSS posts.");
+  process.exit(1);
+}
+
+const research = JSON.parse(await fs.readFile(path.join(root, "data", "research.json"), "utf8"));
+const latestResearch = Array.isArray(research.articles)
+  ? selectLatestResearch(research.articles)
+  : null;
+if (!latestResearch) {
+  console.error("Expected at least one research article for the homepage feature.");
+  process.exit(1);
+}
+if (research.articles.some((article) => Object.hasOwn(article, "featured"))) {
+  console.error("Manual featured flags are not allowed; the newest research is selected automatically.");
+  process.exit(1);
+}
+for (const field of ["heroImage", "heroAlt", "analystNote"]) {
+  if (!latestResearch[field]) {
+    console.error(`Latest research is missing ${field}.`);
+    process.exit(1);
+  }
+}
+try {
+  await fs.access(path.join(root, latestResearch.heroImage));
+} catch {
+  console.error(`Latest research hero image is missing: ${latestResearch.heroImage}`);
   process.exit(1);
 }
 
@@ -212,6 +238,17 @@ for (const file of scannedFiles.filter((item) => item.relativePath !== "data/pos
 const index = await readTextFile("index.html");
 if (!index.content.includes('id="weekly-note"')) {
   monetizationFailures.push("index.html: missing weekly-note conversion section.");
+}
+for (const id of ["featured-image", "featured-case", "featured-analyst-note"]) {
+  if (!index.content.includes(`id="${id}"`)) {
+    monetizationFailures.push(`index.html: missing dynamic featured field ${id}.`);
+  }
+}
+if (!index.content.includes(`src="${latestResearch.heroImage}"`)) {
+  monetizationFailures.push("index.html: static featured image does not match data/research.json.");
+}
+if (!index.content.includes(`href="${latestResearch.localPath}"`)) {
+  monetizationFailures.push("index.html: static featured link does not match the latest research.");
 }
 
 const generatedSamples = scannedFiles.filter((file) => file.relativePath.startsWith("posts/") && file.relativePath !== "posts/index.html");
