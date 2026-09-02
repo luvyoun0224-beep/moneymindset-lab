@@ -26,7 +26,8 @@ const server = http.createServer(async (req, res) => {
     if (stat?.isDirectory()) filePath = path.join(filePath, "index.html");
     const body = await fs.readFile(filePath);
     res.writeHead(200, {
-      "content-type": contentTypes.get(path.extname(filePath)) || "application/octet-stream"
+      "content-type": contentTypes.get(path.extname(filePath)) || "application/octet-stream",
+      "cache-control": "no-store"
     });
     res.end(body);
   } catch {

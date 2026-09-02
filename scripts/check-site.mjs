@@ -7,6 +7,10 @@ const root = path.resolve(fileURLToPath(new URL("..", import.meta.url)));
 const adsenseClient = "ca-pub-5456414339006405";
 const adsensePublisher = "pub-5456414339006405";
 const adsenseSellerRow = `google.com, ${adsensePublisher}, DIRECT, f08c47fec0942fa0`;
+const research = JSON.parse(await fs.readFile(path.join(root, "data", "research.json"), "utf8"));
+const researchPages = (research.articles ?? [])
+  .filter((article) => article.type === "research" && typeof article.localPath === "string")
+  .map((article) => path.posix.join(article.localPath, "index.html"));
 
 const required = [
   "index.html",
@@ -20,12 +24,7 @@ const required = [
   "space-economy-notes.html",
   "editorial-policy.html",
   "research/index.html",
-  "research/broadcom-ai-infrastructure/index.html",
-  "research/planet-labs-contract-economics/index.html",
-  "research/palantir-rule-of-40-valuation/index.html",
-  "research/us-jobs-report-growth-stocks-2026-09/index.html",
-  "research/us-labor-day-market-holiday-2026/index.html",
-  "research/planet-labs-fy2027-q2-earnings-preview/index.html",
+  ...researchPages,
   "data/posts.json",
   "data/research.json",
   "sitemap.xml",
@@ -53,7 +52,6 @@ if (!Array.isArray(posts.posts) || posts.posts.length < 10) {
   process.exit(1);
 }
 
-const research = JSON.parse(await fs.readFile(path.join(root, "data", "research.json"), "utf8"));
 const latestResearch = Array.isArray(research.articles)
   ? selectLatestResearch(research.articles)
   : null;
@@ -90,12 +88,7 @@ const coreTextFiles = [
   "space-economy-notes.html",
   "editorial-policy.html",
   "research/index.html",
-  "research/broadcom-ai-infrastructure/index.html",
-  "research/planet-labs-contract-economics/index.html",
-  "research/palantir-rule-of-40-valuation/index.html",
-  "research/us-jobs-report-growth-stocks-2026-09/index.html",
-  "research/us-labor-day-market-holiday-2026/index.html",
-  "research/planet-labs-fy2027-q2-earnings-preview/index.html",
+  ...researchPages,
   "site.config.mjs",
   "data/posts.json",
   "data/research.json",
@@ -206,14 +199,7 @@ if (missingCleanPhrases.length) {
 
 const monetizationFailures = [];
 
-for (const deepResearchPage of [
-  "research/broadcom-ai-infrastructure/index.html",
-  "research/planet-labs-contract-economics/index.html"
-  ,"research/palantir-rule-of-40-valuation/index.html"
-  ,"research/us-jobs-report-growth-stocks-2026-09/index.html"
-  ,"research/us-labor-day-market-holiday-2026/index.html"
-  ,"research/planet-labs-fy2027-q2-earnings-preview/index.html"
-]) {
+for (const deepResearchPage of researchPages) {
   const page = scannedFiles.find((file) => file.relativePath === deepResearchPage);
   const textLength = page
     ? page.content.replace(/<script[\s\S]*?<\/script>/gi, " ").replace(/<style[\s\S]*?<\/style>/gi, " ").replace(/<[^>]+>/g, " ").replace(/\s+/g, " ").trim().length
@@ -267,12 +253,7 @@ const monetizablePages = [
   "semiconductor-cycle.html",
   "space-economy-notes.html",
   "research/index.html",
-  "research/broadcom-ai-infrastructure/index.html",
-  "research/planet-labs-contract-economics/index.html"
-  ,"research/palantir-rule-of-40-valuation/index.html"
-  ,"research/us-jobs-report-growth-stocks-2026-09/index.html"
-  ,"research/us-labor-day-market-holiday-2026/index.html"
-  ,"research/planet-labs-fy2027-q2-earnings-preview/index.html"
+  ...researchPages
 ];
 for (const monetizablePage of monetizablePages) {
   const page = scannedFiles.find((file) => file.relativePath === monetizablePage);

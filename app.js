@@ -60,13 +60,13 @@ const compactSummary = (summary) => {
 };
 
 async function loadPosts() {
-  const response = await fetch("data/posts.json", { cache: "no-store" });
+  const response = await fetch(`data/posts.json?ts=${Date.now()}`, { cache: "no-store" });
   if (!response.ok) throw new Error("posts.json load failed");
   return response.json();
 }
 
 async function loadResearch() {
-  const response = await fetch("data/research.json", { cache: "no-store" });
+  const response = await fetch(`data/research.json?ts=${Date.now()}`, { cache: "no-store" });
   if (!response.ok) throw new Error("research.json load failed");
   return response.json();
 }

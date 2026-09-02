@@ -1,6 +1,38 @@
 {
-  "generatedAt": "2026-09-01T01:00:00+09:00",
+  "generatedAt": "2026-09-03T08:12:00+09:00",
   "articles": [
+    {
+      "id": "palantir-peter-zaffino-financial-services",
+      "type": "research",
+      "category": "AI 소프트웨어",
+      "title": "Peter Zaffino 영입으로 읽는 Palantir 금융서비스 전략: AIG 고객 경험이 산업 확장 조직으로 바뀌는가",
+      "homeTitle": "Palantir 금융서비스 전략: AIG 고객 경험을 산업 확장으로",
+      "summary": "전 AIG CEO Peter Zaffino의 2027년 합류가 왜 일반적인 인사 뉴스와 다른지, 기존 AIG 도입 경험·상업 부문 성장·신규 계약과 반복 매출의 다섯 관문으로 검증합니다.",
+      "published": "2026-09-03",
+      "publishedAt": "2026-09-03T08:12:00+09:00",
+      "localPath": "research/palantir-peter-zaffino-financial-services/",
+      "focus": "AIG · 금융서비스 · AIP · 신규 계약 · 반복 매출",
+      "readTime": "약 31분",
+      "heroImage": "assets/research/palantir-zaffino/01-hero.png",
+      "heroAlt": "금융기관의 복잡한 업무 데이터와 AI 의사결정 계층을 연결하는 기업 운영 장면",
+      "analystNote": "고객사 CEO 영입이라는 전략 신호가 신규 금융기관 계약과 확장 매출로 전환되는지 확인합니다."
+    },
+    {
+      "id": "kospi-oil-yields-2026-09-02",
+      "type": "research",
+      "category": "한국 시장",
+      "title": "코스피 3.99% 급락의 구조: 유가·미국 10년물·외국인 수급이 반도체 할인율에 닿는 순서",
+      "homeTitle": "코스피 3.99% 급락: 유가·10년물·반도체의 연결",
+      "summary": "9월 2일 코스피 급락을 유가·미국 10년물·외국인 수급·시장 폭과 반도체 기업 실적으로 분리하고, 단기 충격과 투자 논리 훼손을 구분할 조건을 정리합니다.",
+      "published": "2026-09-03",
+      "publishedAt": "2026-09-03T08:11:00+09:00",
+      "localPath": "research/kospi-oil-yields-2026-09-02/",
+      "focus": "코스피 · 국제유가 · 미국 10년물 · 수급 · 반도체",
+      "readTime": "약 25분",
+      "heroImage": "assets/research/kospi-oil-yields/01-hero.png",
+      "heroAlt": "국제유가와 장기금리 충격이 한국 주식시장으로 번지는 금융시장 장면",
+      "analystNote": "지수 급락의 원인을 단정하지 않고 유가·금리·수급과 기업 이익을 같은 기준으로 추적합니다."
+    },
     {
       "id": "planet-labs-fy2027-q2-earnings-preview",
       "type": "research",

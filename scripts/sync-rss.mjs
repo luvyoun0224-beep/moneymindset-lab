@@ -33,7 +33,7 @@ const pick = (xml, tag) => {
 
 const slugify = (link, index) => {
   const id = link.match(/\/(\d{8,})(?:\?|$)/)?.[1];
-  return `${String(index + 1).padStart(2, "0")}-${id || "investment-note"}`;
+  return id || `investment-note-${String(index + 1).padStart(2, "0")}`;
 };
 
 const topicFor = (title, category, summary) => {
@@ -193,11 +193,6 @@ const posts = itemMatches.slice(0, 50).map((match, index) => {
 await ensureDir("data");
 await ensureDir("posts");
 
-for (const entry of await fs.readdir(path.join(root, "posts"), { withFileTypes: true })) {
-  if (entry.name === "index.html") continue;
-  await fs.rm(path.join(root, "posts", entry.name), { recursive: true, force: true });
-}
-
 await fs.writeFile(
   path.join(root, "data", "posts.json"),
   JSON.stringify(
@@ -285,6 +280,11 @@ for (const post of posts) {
   );
 }
 
+const researchData = JSON.parse(await fs.readFile(path.join(root, "data", "research.json"), "utf8"));
+const researchUrls = (researchData.articles ?? [])
+  .filter((article) => article.type === "research" && typeof article.localPath === "string")
+  .map((article) => article.localPath);
+
 const urls = [
   "",
   "about.html",
@@ -296,12 +296,7 @@ const urls = [
   "space-economy-notes.html",
   "editorial-policy.html",
   "research/",
-  "research/broadcom-ai-infrastructure/",
-  "research/planet-labs-contract-economics/"
-  ,"research/palantir-rule-of-40-valuation/"
-  ,"research/us-jobs-report-growth-stocks-2026-09/"
-  ,"research/us-labor-day-market-holiday-2026/"
-  ,"research/planet-labs-fy2027-q2-earnings-preview/"
+  ...researchUrls
 ];
 
 const koreaDate = new Intl.DateTimeFormat("en-CA", {
@@ -344,7 +339,6 @@ await fs.writeFile(
   "utf8"
 );
 
-const researchData = JSON.parse(await fs.readFile(path.join(root, "data", "research.json"), "utf8"));
 const latestResearch = await syncFeaturedHomepage(root, researchData);
 
 console.log(`Synced ${posts.length} posts from ${config.rssUrl}; homepage featured ${latestResearch.id}`);
