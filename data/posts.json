@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-03T20:59:24.134Z",
+  "generatedAt": "2026-09-04T17:00:21.847Z",
   "source": "https://rss.blog.naver.com/jasonjedi.xml",
   "categories": [
     {
@@ -29,6 +29,50 @@
     }
   ],
   "posts": [
+    {
+      "title": "미국 8월 고용 16만2천명, 9월 FOMC 전에 볼 조건 5가지",
+      "category": "미국 주식",
+      "topicId": "macro",
+      "topicLabel": "매크로",
+      "summary": "미국의 2026년 8월 비농업 고용이 16만2천명 증가했습니다. 실업률은 4.1%로 전월과 같았고, 시간당 평균임금은 전월보다 0.3%, 전년 동월보다 3.1% 올랐습니다. 시장 예상은 보도기관 집계에 따라 약 5만3천명에서 6만5천명 사이였으므로 고용 증가폭은 예상보다 훨씬 컸습니다. 저는 지난 글에서 9월 4일 고용보고서의 발표시간과…",
+      "sourceUrl": "https://blog.naver.com/jasonjedi/224401456142?fromRss=true&trackingCode=rss",
+      "isoDate": "2026-09-04T16:52:14.000Z",
+      "slug": "224401456142",
+      "localPath": "posts/224401456142/"
+    },
+    {
+      "title": "엔비디아 허깅페이스 129억3030만달러 인수 확정, 개방성이 해자인 이유",
+      "category": "엔비디아 로드맵",
+      "topicId": "semiconductors",
+      "topicLabel": "반도체",
+      "summary": "엔비디아가 Hugging Face를 129억3030만달러에 인수하기로 합의했습니다. 8월에는 복수 매체의 인수 보도만 있었고 회사 공식 발표가 없었습니다. 당시 저는 거래를 확정 인수라고 쓰지 않고 인수 보도와 가능성으로 구분했습니다. 이제 상황이 바뀌었습니다. 엔비디아의 공식 발표와 SEC 8-K가 공개됐습니다. 엔비디아는 2026년…",
+      "sourceUrl": "https://blog.naver.com/jasonjedi/224401455356?fromRss=true&trackingCode=rss",
+      "isoDate": "2026-09-04T16:50:15.000Z",
+      "slug": "224401455356",
+      "localPath": "posts/224401455356/"
+    },
+    {
+      "title": "로켓랩 94번째 발사 성공, Synspective 후속 16회에서 볼 조건 5가지",
+      "category": "미국 주식",
+      "topicId": "space-economy",
+      "topicLabel": "우주 경제",
+      "summary": "로켓랩이 9월 3일 Owl Around The World 임무를 성공적으로 마쳤습니다. Electron은 일본 Synspective의 11번째 StriX SAR 위성을 575km 저궤도에 배치했습니다. 로켓랩은 이번 임무를 94번째 전체 Electron 계열 발사이자 2026년 15번째 발사로 집계했습니다. 이번 뉴스에서 제가 더…",
+      "sourceUrl": "https://blog.naver.com/jasonjedi/224400474910?fromRss=true&trackingCode=rss",
+      "isoDate": "2026-09-03T23:21:44.000Z",
+      "slug": "224400474910",
+      "localPath": "posts/224400474910/"
+    },
+    {
+      "title": "브로드컴 3분기 AI 매출 167억달러, 4분기 217억달러에서 볼 조건 5가지",
+      "category": "미국 주식",
+      "topicId": "semiconductors",
+      "topicLabel": "반도체",
+      "summary": "브로드컴이 FY2026 3분기 실적을 발표했습니다. 전체 매출은 295억9100만달러로 전년동기보다 86% 늘었고, AI 반도체 매출은 167억달러로 221% 증가했습니다. 3개월 전 회사가 제시했던 전체 매출 약 294억달러와 AI 반도체 매출 160억달러 전망을 모두 웃돌았습니다. 숫자만 보면 강한 실적입니다. 그런데 투자자가…",
+      "sourceUrl": "https://blog.naver.com/jasonjedi/224400469807?fromRss=true&trackingCode=rss",
+      "isoDate": "2026-09-03T23:13:56.000Z",
+      "slug": "224400469807",
+      "localPath": "posts/224400469807/"
+    },
     {
       "title": "팔란티어 전 AIG CEO 영입, 금융권 매출로 바뀌는 조건 5가지",
       "category": "미국 주식",
@@ -534,50 +578,6 @@
       "isoDate": "2026-06-20T11:54:53.000Z",
       "slug": "224321989577",
       "localPath": "posts/224321989577/"
-    },
-    {
-      "title": "케빈 워시의 첫 FOMC가 뜨거웠던 이유는? 이제 투자자는 달라져야 합니다",
-      "category": "미국 주식",
-      "topicId": "macro",
-      "topicLabel": "매크로",
-      "summary": "이번 FOMC의 핵심은 금리 동결이 아니었습니다 이번 FOMC가 시장에서 뜨거웠던 이유는 단순히 기준금리를 동결했기 때문이 아닙니다. 기준금리는 예상대로 3.50%~3.75% 범위에서 유지됐습니다. 문제는 동결이라는 표면 아래에서 연준의 정책 방향과 커뮤니케이션 방식이 완전히 바뀌었다는 점입니다. 이번 회의는 케빈 워시가 연준 의장으로…",
-      "sourceUrl": "https://blog.naver.com/jasonjedi/224320353247?fromRss=true&trackingCode=rss",
-      "isoDate": "2026-06-18T15:47:25.000Z",
-      "slug": "224320353247",
-      "localPath": "posts/224320353247/"
-    },
-    {
-      "title": "미국 정부가 앤트로픽 최상위 모델을 잠근 이유는? 그리고 웃고 있는 팔란티어",
-      "category": "미국 주식",
-      "topicId": "stock-investing",
-      "topicLabel": "주식투자",
-      "summary": "먼저 팩트체크부터 해야 합니다 이번 이슈의 핵심은 “미국 정부가 앤트로픽 전체 서비스를 막았다”가 아닙니다. 정확히는 미국 정부가 국가안보 우려를 이유로 앤트로픽의 최상위 AI 모델인 Claude Fable 5와 Mythos 5에 대한 외국인 접근을 제한하라고 명령했고, 앤트로픽은 이를 준수하기 위해 해당 모델들의 접근을 전면 중단하거나…",
-      "sourceUrl": "https://blog.naver.com/jasonjedi/224319285208?fromRss=true&trackingCode=rss",
-      "isoDate": "2026-06-17T15:33:51.000Z",
-      "slug": "224319285208",
-      "localPath": "posts/224319285208/"
-    },
-    {
-      "title": "미래에셋 스페이스X 공모주 0주 사태: 한국 투자자가 배운 가장 비싼 교훈입니다",
-      "category": "미국 주식",
-      "topicId": "space-economy",
-      "topicLabel": "우주 경제",
-      "summary": "미래에셋이 스페이스X 주식을 하나도 못 받은 것은 사실입니다 이번 사건의 핵심부터 분명히 짚고 가야 합니다. 미래에셋증권은 스페이스X IPO 인수단에 이름을 올렸고, 국내 전문투자자와 기관투자자를 대상으로 청약을 진행했지만, 최종 배정에서 단 한 주도 받지 못했습니다. 미래에셋증권은 청약에 참여한 투자자들에게 증거금을 전액 환불했고,…",
-      "sourceUrl": "https://blog.naver.com/jasonjedi/224317026278?fromRss=true&trackingCode=rss",
-      "isoDate": "2026-06-15T15:29:17.000Z",
-      "slug": "224317026278",
-      "localPath": "posts/224317026278/"
-    },
-    {
-      "title": "스페이스X 상장 첫날은 어땠나: 대성공이었지만, 우주주는 오히려 갈렸습니다",
-      "category": "미국 주식",
-      "topicId": "space-economy",
-      "topicLabel": "우주 경제",
-      "summary": "첫날 결론부터 말하면, 스페이스X는 성공했고 우주주는 흔들렸습니다 스페이스X의 상장 첫날은 숫자만 보면 대성공이었습니다. 공모가는 135달러였고, 나스닥 첫 거래는 150달러에서 시작됐습니다. 장중 내내 강한 매수세가 이어졌고, 종가는 160.95달러로 공모가 대비 약 19% 상승했습니다. 시가총액은 2조 1,000억 달러를 넘어서며…",
-      "sourceUrl": "https://blog.naver.com/jasonjedi/224315192417?fromRss=true&trackingCode=rss",
-      "isoDate": "2026-06-13T18:18:11.000Z",
-      "slug": "224315192417",
-      "localPath": "posts/224315192417/"
     }
   ]
 }

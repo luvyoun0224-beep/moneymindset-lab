@@ -1,6 +1,38 @@
 {
-  "generatedAt": "2026-09-03T08:12:00+09:00",
+  "generatedAt": "2026-09-05T01:21:00+09:00",
   "articles": [
+    {
+      "id": "nvidia-hugging-face-acquisition",
+      "type": "research",
+      "category": "AI 반도체",
+      "title": "NVIDIA의 Hugging Face 인수 분석: 129억3030만달러가 오픈모델 생태계와 GPU 해자에 미치는 영향",
+      "homeTitle": "NVIDIA·Hugging Face 인수: 개방성이 GPU 해자인 이유",
+      "summary": "NVIDIA의 Hugging Face 129억3030만달러 인수 계약, 2027년 상반기 종결 조건, 플랫폼 개방성 약속과 GPU 생태계 효과를 SEC 8-K로 검증합니다.",
+      "published": "2026-09-05",
+      "publishedAt": "2026-09-05T01:21:00+09:00",
+      "localPath": "research/nvidia-hugging-face-acquisition/",
+      "focus": "Hugging Face · 오픈모델 · CUDA · 규제 승인 · 플랫폼 중립성",
+      "readTime": "약 32분",
+      "heroImage": "assets/research/nvidia-huggingface-acquisition/01-hero.png",
+      "heroAlt": "AI 가속기 데이터센터와 오픈모델 개발자 생태계가 연결되는 장면",
+      "analystNote": "모델 유통의 입구를 확보하는 전략과 플랫폼을 닫을 때 훼손될 네트워크 효과를 함께 봅니다."
+    },
+    {
+      "id": "us-jobs-august-2026-results",
+      "type": "research",
+      "category": "미국 매크로",
+      "title": "2026년 8월 미국 고용보고서 해부: 16만2천명 증가가 금리와 성장주에 전달되는 조건",
+      "homeTitle": "미국 고용 16만2천명: 금리와 성장주에 닿는 조건",
+      "summary": "2026년 8월 미국 고용 16만2천명, 실업률 4.1%, 임금과 수정치를 BLS 원문으로 검증하고 9월 FOMC와 성장주 전달 경로를 분석합니다.",
+      "published": "2026-09-05",
+      "publishedAt": "2026-09-05T01:20:00+09:00",
+      "localPath": "research/us-jobs-august-2026-results/",
+      "focus": "비농업 고용 · 실업률 · 임금 · FOMC · 성장주",
+      "readTime": "약 28분",
+      "heroImage": "assets/research/us-jobs-august-2026/01-hero.png",
+      "heroAlt": "미국 노동시장 데이터와 금융시장을 함께 분석하는 경제 연구 장면",
+      "analystNote": "고용 호조를 단일 호재·악재로 단정하지 않고 수요와 할인율의 두 경로로 검증합니다."
+    },
     {
       "id": "palantir-peter-zaffino-financial-services",
       "type": "research",
