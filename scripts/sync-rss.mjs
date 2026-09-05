@@ -217,6 +217,7 @@ for (const post of posts) {
       <section class="article-hero">
         <div class="article-hero-copy">
         <p class="micro-label"><span></span>NAVER BRIEF · ${escapeHtml(post.topicLabel)} · ${new Intl.DateTimeFormat("ko-KR", {
+          timeZone: "Asia/Seoul",
           year: "numeric",
           month: "long",
           day: "numeric"

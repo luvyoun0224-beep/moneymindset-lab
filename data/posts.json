@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-04T20:43:27.725Z",
+  "generatedAt": "2026-09-05T16:05:44.833Z",
   "source": "https://rss.blog.naver.com/jasonjedi.xml",
   "categories": [
     {
@@ -29,6 +29,28 @@
     }
   ],
   "posts": [
+    {
+      "title": "플래닛랩스 Q2 매출 1억1610만달러, 백로그·현금흐름에서 볼 조건 5가지",
+      "category": "미국 주식",
+      "topicId": "space-economy",
+      "topicLabel": "우주 경제",
+      "summary": "플래닛랩스가 2027회계연도 2분기에 매출 1억1610만달러를 기록했습니다. 전년 동기보다 58% 늘어난 분기 최고 매출입니다. 조정 EBITDA는 1390만달러 흑자였고, GAAP 순손실은 940만달러로 전년 동기 2260만달러보다 줄었습니다. 숫자만 보면 성장과 수익성이 동시에 좋아진 분기입니다. 저는 9월 1일 글에서 이번 실적을…",
+      "sourceUrl": "https://blog.naver.com/jasonjedi/224402241077?fromRss=true&trackingCode=rss",
+      "isoDate": "2026-09-05T16:00:57.000Z",
+      "slug": "224402241077",
+      "localPath": "posts/224402241077/"
+    },
+    {
+      "title": "미국 8월 CPI 9월 11일 밤 9시30분, FOMC 전에 볼 조건 5가지",
+      "category": "미국 주식",
+      "topicId": "macro",
+      "topicLabel": "매크로",
+      "summary": "미국 8월 소비자물가지수(CPI)가 9월 11일 금요일 오전 8시30분, 한국시간으로 같은 날 밤 9시30분에 발표됩니다. 전날인 9월 10일에는 생산자물가지수(PPI)가 먼저 나옵니다. 그리고 9월 15~16일에는 연방공개시장위원회(FOMC)가 열립니다. 앞으로 일주일 동안 물가와 금리 기대가 빠르게 움직일 수 있는 일정이 모여…",
+      "sourceUrl": "https://blog.naver.com/jasonjedi/224402239962?fromRss=true&trackingCode=rss",
+      "isoDate": "2026-09-05T15:58:49.000Z",
+      "slug": "224402239962",
+      "localPath": "posts/224402239962/"
+    },
     {
       "title": "미국 8월 고용 16만2천명, 9월 FOMC 전에 볼 조건 5가지",
       "category": "미국 주식",
@@ -556,28 +578,6 @@
       "isoDate": "2026-06-23T15:33:35.000Z",
       "slug": "224325136877",
       "localPath": "posts/224325136877/"
-    },
-    {
-      "title": "AI가 만들 가장 큰 혁명은 바이오일 수 있습니다: 암과 질병 치료의 판이 바뀌고 있습니다",
-      "category": "미국 주식",
-      "topicId": "semiconductors",
-      "topicLabel": "반도체",
-      "summary": "AI 혁명의 다음 전장은 반도체가 아니라 생명입니다 지금까지 시장은 AI 혁명을 주로 반도체 관점에서 봤습니다. 엔비디아 GPU, HBM, 데이터센터, 전력, 냉각, 네트워크, 하드디스크까지 모두 AI 인프라의 병목이었고, 실제로 엄청난 주가 상승을 만들었습니다. 하지만 더 멀리 보면 AI가 진짜로 세상을 바꿀 영역은 따로 있습니다.…",
-      "sourceUrl": "https://blog.naver.com/jasonjedi/224322905754?fromRss=true&trackingCode=rss",
-      "isoDate": "2026-06-21T16:20:29.000Z",
-      "slug": "224322905754",
-      "localPath": "posts/224322905754/"
-    },
-    {
-      "title": "메모리 반도체 다음은 하드디스크? AI 시대의 숨은 병목은 ‘저장장치’입니다",
-      "category": "미국 주식",
-      "topicId": "semiconductors",
-      "topicLabel": "반도체",
-      "summary": "HBM과 HDD는 경쟁 관계가 아닙니다. 서로 다른 층위의 병목입니다. AI 1막에서는 GPU와 HBM이 병목이었습니다. 거대 모델을 학습하려면 엔비디아 GPU가 필요했고, 그 GPU가 제대로 일하려면 SK하이닉스, 삼성전자, 마이크론의 HBM이 필요했습니다. 그래서 메모리 반도체 슈퍼사이클이 열렸습니다. 그런데 AI 2막으로 넘어가면…",
-      "sourceUrl": "https://blog.naver.com/jasonjedi/224321989577?fromRss=true&trackingCode=rss",
-      "isoDate": "2026-06-20T11:54:53.000Z",
-      "slug": "224321989577",
-      "localPath": "posts/224321989577/"
     }
   ]
 }

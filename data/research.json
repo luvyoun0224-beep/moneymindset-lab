@@ -1,6 +1,38 @@
 {
-  "generatedAt": "2026-09-05T01:21:00+09:00",
+  "generatedAt": "2026-09-06T00:41:00+09:00",
   "articles": [
+    {
+      "id": "planet-labs-fy2027-q2-results",
+      "category": "우주 데이터",
+      "title": "플래닛랩스 FY2027 2분기 실적 분석: 매출 58% 성장 뒤의 백로그·현금흐름·희석",
+      "homeTitle": "플래닛랩스 Q2: 매출 58% 성장 뒤의 현금흐름",
+      "summary": "플래닛랩스 매출 1억1610만달러, RPO·백로그, 영업현금흐름과 ATM 희석을 SEC 원문으로 검증합니다.",
+      "published": "2026-09-06",
+      "publishedAt": "2026-09-06T00:41:00+09:00",
+      "focus": "매출 · RPO · 백로그 · 현금흐름 · 희석",
+      "readTime": "약 34분",
+      "heroImage": "assets/research/planet-q2-results/01-hero.png",
+      "heroAlt": "지구관측 위성과 데이터 분석 시스템이 연결되는 장면",
+      "analystNote": "강한 분기 실적과 위성 인도 매출·낮은 다음 분기 가이던스·ATM 희석을 같은 표에서 봅니다.",
+      "type": "research",
+      "localPath": "research/planet-labs-fy2027-q2-results/"
+    },
+    {
+      "id": "us-cpi-august-2026-preview",
+      "category": "미국 매크로",
+      "title": "미국 8월 CPI 프리뷰: 9월 FOMC 앞에서 물가·금리·성장주를 읽는 방법",
+      "homeTitle": "미국 8월 CPI: FOMC 전에 읽을 물가·금리 경로",
+      "summary": "9월 11일 발표되는 미국 8월 CPI를 7월 기준선, 주거·서비스·에너지, 국채금리와 성장주 할인율의 경로로 분석합니다.",
+      "published": "2026-09-06",
+      "publishedAt": "2026-09-06T00:40:00+09:00",
+      "focus": "CPI · 근원물가 · 주거비 · 국채금리 · FOMC",
+      "readTime": "약 31분",
+      "heroImage": "assets/research/us-cpi-august-2026-preview/01-hero.png",
+      "heroAlt": "미국 CPI와 연준 금리 경로를 분석하는 금융 연구 장면",
+      "analystNote": "발표 전 예측보다 7월 기준선과 물가가 금리·성장주에 전달되는 조건을 먼저 고정합니다.",
+      "type": "research",
+      "localPath": "research/us-cpi-august-2026-preview/"
+    },
     {
       "id": "nvidia-hugging-face-acquisition",
       "type": "research",
