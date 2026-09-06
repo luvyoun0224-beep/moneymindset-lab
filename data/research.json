@@ -1,6 +1,22 @@
 {
-  "generatedAt": "2026-09-06T00:41:00+09:00",
+  "generatedAt": "2026-09-07T01:05:00+09:00",
   "articles": [
+    {
+      "id": "micron-fy2026-q4-earnings-preview",
+      "type": "research",
+      "category": "AI 반도체",
+      "title": "마이크론 FY2026 4분기 실적 프리뷰: 500억달러 매출 뒤의 AI 메모리 복리 조건",
+      "homeTitle": "마이크론 Q4: 500억달러 매출 뒤의 메모리 복리",
+      "summary": "마이크론 FY2026 4분기 매출 500억달러 가이던스, 총마진 86%, HBM 수요와 270억달러 자본지출을 공식 자료로 검증합니다.",
+      "published": "2026-09-07",
+      "publishedAt": "2026-09-07T01:05:00+09:00",
+      "localPath": "research/micron-fy2026-q4-earnings-preview/",
+      "focus": "FQ4 가이던스 · HBM · 총마진 · CAPEX · 현금흐름",
+      "readTime": "약 35분",
+      "heroImage": "assets/research/micron-fy2026-q4-preview/01-hero.png",
+      "heroAlt": "HBM 적층 메모리와 첨단 DRAM 웨이퍼가 AI 데이터센터로 연결되는 장면",
+      "analystNote": "최고 매출보다 가격 상승 속도 둔화, 공급투자와 FY2027 현금흐름의 조합을 봅니다."
+    },
     {
       "id": "planet-labs-fy2027-q2-results",
       "category": "우주 데이터",
