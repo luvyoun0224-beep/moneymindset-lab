@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-06T20:21:49.667Z",
+  "generatedAt": "2026-09-07T21:28:50.540Z",
   "source": "https://rss.blog.naver.com/jasonjedi.xml",
   "categories": [
     {
@@ -29,6 +29,28 @@
     }
   ],
   "posts": [
+    {
+      "title": "마이크론 실적 9월 30일, 매출 500억달러 가이던스에서 볼 조건 5가지",
+      "category": "미국 주식",
+      "topicId": "semiconductors",
+      "topicLabel": "반도체",
+      "summary": "마이크론이 2026년 9월 30일 수요일 오후 2시30분 미국 산악시간에 2026회계연도 4분기 실적을 발표합니다. 한국시간으로는 10월 1일 목요일 오전 5시30분입니다. 회사가 공식 예고한 일정입니다. 이번 실적의 출발점은 3분기 매출 414억5600만달러입니다. 마이크론은 4분기 매출을 500억달러±10억달러, 총마진을 약 86%,…",
+      "sourceUrl": "https://blog.naver.com/jasonjedi/224403228524?fromRss=true&trackingCode=rss",
+      "isoDate": "2026-09-06T23:23:54.000Z",
+      "slug": "224403228524",
+      "localPath": "posts/224403228524/"
+    },
+    {
+      "title": "미국주식 오늘 노동절 휴장, 9월 8일 거래 재개 전 볼 조건 5가지",
+      "category": "미국 주식",
+      "topicId": "korea-market",
+      "topicLabel": "한국 시장",
+      "summary": "2026년 9월 7일 월요일은 미국 노동절입니다. NYSE와 Nasdaq 미국 주식시장은 이날 하루 종일 문을 닫습니다. 조기 종료가 아니라 전일 휴장입니다. 한국 투자자에게는 9월 7일 밤 10시30분부터 다음 날 오전 5시까지 열려야 할 정규장이 없는 날입니다. 미국 서머타임 기간의 정규 거래시간은 한국시간 밤 10시30분부터 다음…",
+      "sourceUrl": "https://blog.naver.com/jasonjedi/224403226281?fromRss=true&trackingCode=rss",
+      "isoDate": "2026-09-06T23:20:22.000Z",
+      "slug": "224403226281",
+      "localPath": "posts/224403226281/"
+    },
     {
       "title": "플래닛랩스 Q2 매출 1억1610만달러, 백로그·현금흐름에서 볼 조건 5가지",
       "category": "미국 주식",
@@ -556,28 +578,6 @@
       "isoDate": "2026-06-25T15:32:37.000Z",
       "slug": "224327465244",
       "localPath": "posts/224327465244/"
-    },
-    {
-      "title": "SK하이닉스 미국 상장?",
-      "category": "미국 주식",
-      "topicId": "semiconductors",
-      "topicLabel": "반도체",
-      "summary": "이번 ADR의 핵심 조건입니다 현재 알려진 조건은 매우 큽니다. SK하이닉스는 나스닥 ADR 상장을 통해 최대 45조 4,500억 원, 약 294억 달러를 조달하려 하고 있습니다. 거래 개시 예정일은 7월 10일로 전해졌고, BofA Securities, Citi, Goldman Sachs, J.P. Morgan이 주관사로 이름을…",
-      "sourceUrl": "https://blog.naver.com/jasonjedi/224326367902?fromRss=true&trackingCode=rss",
-      "isoDate": "2026-06-24T16:29:14.000Z",
-      "slug": "224326367902",
-      "localPath": "posts/224326367902/"
-    },
-    {
-      "title": "팔지도 않은 주식에 세금?",
-      "category": "우리나라 경제 및 주식",
-      "topicId": "macro",
-      "topicLabel": "매크로",
-      "summary": "제가 코스피 투자를 꺼리는 이유가 명확히 나타난 사건이 있었습니다. 주식 부동산의 미실현 이익에 대해서 과세를 하자는 것이 여당 국회의원들이 주러 참석한 토론회에서 나왔습니다. 코스피가 싫은 이유는 단순히 세금이 많아서가 아닙니다. 문제는 정부와 정치권이 시장을 ‘투자자의 소유권’이 아니라 ‘정책 재원’으로 쉽게 바라본다는 점입니다.…",
-      "sourceUrl": "https://blog.naver.com/jasonjedi/224325136877?fromRss=true&trackingCode=rss",
-      "isoDate": "2026-06-23T15:33:35.000Z",
-      "slug": "224325136877",
-      "localPath": "posts/224325136877/"
     }
   ]
 }
