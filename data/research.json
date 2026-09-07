@@ -1,6 +1,38 @@
 {
-  "generatedAt": "2026-09-07T01:05:00+09:00",
+  "generatedAt": "2026-09-08T00:46:00+09:00",
   "articles": [
+    {
+      "id": "ionq-investor-day-2026",
+      "category": "양자컴퓨팅",
+      "title": "IonQ Investor Day 2026 프리뷰: SkyWater 수직 통합이 로드맵과 현금흐름을 바꾸는가",
+      "homeTitle": "IonQ Investor Day: SkyWater 뒤의 로드맵과 현금",
+      "summary": "한국시간 9월 9일 새벽 1시30분 IonQ Investor Day를 Q2 매출, SkyWater 통합, 기술 로드맵, 현금 소진과 희석으로 검증합니다.",
+      "publishedAt": "2026-09-08T00:46:00+09:00",
+      "focus": "Investor Day · SkyWater · 256큐비트 · 현금 · 워런트",
+      "readTime": "약 37분",
+      "analystNote": "수직 통합의 발표보다 웨이퍼 반복 시간·수율·고객 인도·현금과 주당가치의 중간 증거를 봅니다.",
+      "heroAlt": "트랩드이온 양자 프로세서와 반도체 웨이퍼 생산라인",
+      "type": "research",
+      "published": "2026-09-08",
+      "localPath": "research/ionq-investor-day-2026/",
+      "heroImage": "assets/research/ionq-investor-day-2026/01-hero.png"
+    },
+    {
+      "id": "apple-september-event-2026",
+      "category": "AI 디바이스",
+      "title": "Apple 2026년 9월 이벤트 프리뷰: 새 CEO의 첫 무대와 온디바이스 AI 공급망",
+      "homeTitle": "Apple 9월 이벤트: 새 CEO·AI·공급망의 첫 시험",
+      "summary": "한국시간 9월 10일 새벽 2시 Apple Event를 새 CEO, iPhone 매출, 온디바이스 AI와 Broadcom 공급망의 다섯 조건으로 분석합니다.",
+      "publishedAt": "2026-09-08T00:45:00+09:00",
+      "focus": "Apple Event · John Ternus · iPhone · 온디바이스 AI · Broadcom",
+      "readTime": "약 36분",
+      "analystNote": "행사 전 루머를 FACT로 바꾸지 않고 제품·가격·AI 지원·공급망·다음 실적을 순서대로 봅니다.",
+      "heroAlt": "밝은 제품 행사 무대의 스마트폰과 실리콘 부품",
+      "type": "research",
+      "published": "2026-09-08",
+      "localPath": "research/apple-september-event-2026/",
+      "heroImage": "assets/research/apple-september-event-2026/01-hero.png"
+    },
     {
       "id": "micron-fy2026-q4-earnings-preview",
       "type": "research",

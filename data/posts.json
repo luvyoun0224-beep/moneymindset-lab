@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-07T21:28:50.540Z",
+  "generatedAt": "2026-09-07T23:20:18.773Z",
   "source": "https://rss.blog.naver.com/jasonjedi.xml",
   "categories": [
     {
@@ -29,6 +29,28 @@
     }
   ],
   "posts": [
+    {
+      "title": "아이온큐 인베스터 데이 9월 9일 새벽 1시30분, SkyWater 이후 볼 조건 5가지",
+      "category": "아이온큐",
+      "topicId": "korea-market",
+      "topicLabel": "한국 시장",
+      "summary": "아이온큐가 미국 동부시간 9월 8일 오후 12시30분에 2026 Investor Day를 엽니다. 한국시간으로는 9월 9일 수요일 오전 1시30분입니다. IonQ의 공식 행사 일정에 날짜와 시각, 웹캐스트가 올라와 있습니다. 이번 행사는 평소의 기술 발표와 다릅니다. IonQ가 7월 31일 SkyWater Technology 인수를…",
+      "sourceUrl": "https://blog.naver.com/jasonjedi/224404400762?fromRss=true&trackingCode=rss",
+      "isoDate": "2026-09-07T23:16:40.000Z",
+      "slug": "224404400762",
+      "localPath": "posts/224404400762/"
+    },
+    {
+      "title": "애플 이벤트 9월 10일 새벽 2시, 새 CEO·AI·브로드컴에서 볼 조건 5가지",
+      "category": "미국 주식",
+      "topicId": "semiconductors",
+      "topicLabel": "반도체",
+      "summary": "애플의 2026년 9월 특별 행사가 미국 태평양시간 9월 9일 오전 10시에 시작합니다. 한국시간으로는 9월 10일 목요일 오전 2시입니다. Apple이 공개한 행사 안내에서 확인되는 정보는 날짜와 시각, 생중계 경로까지입니다. 행사에서 어떤 제품이 나올지, 가격과 출시일이 어떻게 정해질지는 아직 공식 발표가 아닙니다. 이번 행사가…",
+      "sourceUrl": "https://blog.naver.com/jasonjedi/224404399966?fromRss=true&trackingCode=rss",
+      "isoDate": "2026-09-07T23:15:38.000Z",
+      "slug": "224404399966",
+      "localPath": "posts/224404399966/"
+    },
     {
       "title": "마이크론 실적 9월 30일, 매출 500억달러 가이던스에서 볼 조건 5가지",
       "category": "미국 주식",
@@ -556,28 +578,6 @@
       "isoDate": "2026-06-29T15:59:13.000Z",
       "slug": "224331191488",
       "localPath": "posts/224331191488/"
-    },
-    {
-      "title": "하이닉스와 삼성 앞길 가로막는 정부?",
-      "category": "우리나라 경제 및 주식",
-      "topicId": "semiconductors",
-      "topicLabel": "반도체",
-      "summary": "최근 보도된 핵심은 이렇습니다. 한국 정부가 삼성전자와 SK하이닉스 등과 차세대 대규모 반도체 생산시설 투자 방안을 논의하고 있고, AI 산업의 폭발적 수요 때문에 기존 2040년대 이후로 예상됐던 반도체 시설 건설 일정을 2034~2035년까지 10년 이상 앞당겨야 할 수 있다는 정부 측 발언이 나왔습니다. 또한 정부는 “제2 반도체…",
-      "sourceUrl": "https://blog.naver.com/jasonjedi/224329266207?fromRss=true&trackingCode=rss",
-      "isoDate": "2026-06-27T16:06:42.000Z",
-      "slug": "224329266207",
-      "localPath": "posts/224329266207/"
-    },
-    {
-      "title": "마이크론 실적발표 분석 반도체는 계속 간다",
-      "category": "미국 주식",
-      "topicId": "semiconductors",
-      "topicLabel": "반도체",
-      "summary": "이번 실적은 단순한 어닝 서프라이즈가 아닙니다 마이크론 실적 발표는 시장이 기다리던 답을 줬습니다. 최근 AI 반도체주와 나스닥이 흔들리면서 투자자들은 하나의 질문을 던지고 있었습니다. “AI 메모리 수요가 진짜로 계속 강한가?” 이번 마이크론 실적은 그 질문에 거의 정면으로 답했습니다. 마이크론은 2026 회계연도 3분기에 매출…",
-      "sourceUrl": "https://blog.naver.com/jasonjedi/224327465244?fromRss=true&trackingCode=rss",
-      "isoDate": "2026-06-25T15:32:37.000Z",
-      "slug": "224327465244",
-      "localPath": "posts/224327465244/"
     }
   ]
 }
