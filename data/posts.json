@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-08T21:06:52.942Z",
+  "generatedAt": "2026-09-09T20:53:55.347Z",
   "source": "https://rss.blog.naver.com/jasonjedi.xml",
   "categories": [
     {
@@ -29,6 +29,28 @@
     }
   ],
   "posts": [
+    {
+      "title": "엔비디아 컨퍼런스 9월 11일 오전 12시 50분, AI 수요에서 볼 조건 5가지",
+      "category": "엔비디아 로드맵",
+      "topicId": "semiconductors",
+      "topicLabel": "반도체",
+      "summary": "엔비디아가 미국 태평양시간 9월 10일 오전 8시 50분 Goldman Sachs Communacopia + Technology Conference에 참여합니다. 한국시간으로는 9월 11일 금요일 오전 12시 50분입니다. NVIDIA의 공식 행사 공지에 따르면 발표 내용은 생중계되고 다시보기는 90일 동안 제공됩니다. 이번 행사는…",
+      "sourceUrl": "https://blog.naver.com/jasonjedi/224405588708?fromRss=true&trackingCode=rss",
+      "isoDate": "2026-09-08T23:28:12.000Z",
+      "slug": "224405588708",
+      "localPath": "posts/224405588708/"
+    },
+    {
+      "title": "오라클 실적 9월 11일 오전 6시, RPO 6380억달러에서 볼 조건 5가지",
+      "category": "미국 주식",
+      "topicId": "korea-market",
+      "topicLabel": "한국 시장",
+      "summary": "오라클이 FY2027 1분기 실적을 미국 중부시간 9월 10일 오후 4시에 발표합니다. 한국시간으로는 9월 11일 금요일 오전 6시입니다. Oracle의 공식 일정에서 확인되는 것은 실적 공개일과 컨퍼런스콜 시각입니다. 아직 발표되지 않은 매출과 이익을 결과처럼 쓰지 않겠습니다. 오라클은 한동안 전통 데이터베이스 기업으로 불렸습니다.…",
+      "sourceUrl": "https://blog.naver.com/jasonjedi/224405588384?fromRss=true&trackingCode=rss",
+      "isoDate": "2026-09-08T23:27:44.000Z",
+      "slug": "224405588384",
+      "localPath": "posts/224405588384/"
+    },
     {
       "title": "아이온큐 인베스터 데이 9월 9일 새벽 1시30분, SkyWater 이후 볼 조건 5가지",
       "category": "아이온큐",
@@ -556,28 +578,6 @@
       "isoDate": "2026-07-02T15:15:36.000Z",
       "slug": "224334725191",
       "localPath": "posts/224334725191/"
-    },
-    {
-      "title": "삼전·하닉 성과급 상한제 찌라시? 자본주의에서 나올 수 있는 말인가?",
-      "category": "우리나라 경제 및 주식",
-      "topicId": "semiconductors",
-      "topicLabel": "반도체",
-      "summary": "삼전·하닉 성과급 상한제 찌라시? 먼저 팩트체크부터 해야 합니다 블라인드에 돌고 있다는 “삼성전자와 SK하이닉스 성과급을 국가가 통제한다”, “성과급 상한제를 둔다”는 이야기는 현재 확인 가능한 주요 보도 기준으로는 공식 확정 정책으로 확인되지 않습니다. 그러니까 이 부분은 아직 찌라시로 보는 게 맞습니다. 정부가 삼성전자와 SK하이닉스…",
-      "sourceUrl": "https://blog.naver.com/jasonjedi/224333484856?fromRss=true&trackingCode=rss",
-      "isoDate": "2026-07-01T13:35:16.000Z",
-      "slug": "224333484856",
-      "localPath": "posts/224333484856/"
-    },
-    {
-      "title": "팔란티어 유럽에서 퇴출?",
-      "category": "미국 주식",
-      "topicId": "stock-investing",
-      "topicLabel": "주식투자",
-      "summary": "최근 유럽에서 팔란티어를 둘러싼 분위기가 확실히 나빠지고 있습니다. 영국 런던경찰청의 대형 계약은 런던시장 사디크 칸 측에 의해 막혔고, 프랑스 내무정보기관 DGSI는 팔란티어를 프랑스 기업 ChapsVision으로 대체하겠다고 발표했습니다. 영국 NHS 계약도 재검토 압박을 받고 있습니다. 겉으로 보면 “팔란티어가 유럽에서 쫓겨나는 것…",
-      "sourceUrl": "https://blog.naver.com/jasonjedi/224331191488?fromRss=true&trackingCode=rss",
-      "isoDate": "2026-06-29T15:59:13.000Z",
-      "slug": "224331191488",
-      "localPath": "posts/224331191488/"
     }
   ]
 }
