@@ -1,6 +1,38 @@
 {
-  "generatedAt": "2026-09-09T08:30:00+09:00",
+  "generatedAt": "2026-09-10T08:22:08+09:00",
   "articles": [
+    {
+      "id": "rocketlab-imm-apex-solar-cell",
+      "category": "우주 인프라",
+      "title": "Rocket Lab IMM Apex 분석: 31.5% 효율과 40% 경량화가 Space Systems 해자가 되는가",
+      "homeTitle": "Rocket Lab IMM Apex: 우주 태양전지의 해자 시험",
+      "summary": "Rocket Lab의 차세대 태양전지 IMM Apex를 31.5% 효율·40% 경량화·게르마늄 제거와 고객·수주·마진의 조건으로 분석합니다.",
+      "publishedAt": "2026-09-10T08:22:08+09:00",
+      "focus": "IMM Apex · 태양전지 · SolAero · 수직 통합 · Space Systems",
+      "readTime": "약 41분",
+      "analystNote": "제품 사양을 고객 인증·수율·반복 수주·Space Systems 매출과 현금흐름으로 연결해 검증합니다.",
+      "heroAlt": "차세대 경량 우주 태양전지를 위성에 통합하는 장면",
+      "type": "research",
+      "published": "2026-09-10",
+      "localPath": "research/rocketlab-imm-apex-solar-cell/",
+      "heroImage": "assets/research/rocketlab-imm-apex-solar-cell/01-hero.png"
+    },
+    {
+      "id": "us-ppi-august-2026-preview",
+      "category": "미국 매크로",
+      "title": "미국 8월 PPI 프리뷰: 4.7% 생산자물가에서 금리와 성장주를 읽는 방법",
+      "homeTitle": "미국 8월 PPI: 4.7% 물가와 성장주 할인율",
+      "summary": "한국시간 9월 10일 오후 9시30분 미국 PPI를 7월 4.7% 기준선, 상품·서비스·PCE 연결과 성장주 할인율로 분석합니다.",
+      "publishedAt": "2026-09-10T08:21:43+09:00",
+      "focus": "PPI · 근원물가 · PCE · 국채금리 · 성장주",
+      "readTime": "약 38분",
+      "analystNote": "헤드라인 하나로 FOMC와 주가를 확정하지 않고 상품·서비스·근원 가격과 PCE 연결 항목을 나눠 봅니다.",
+      "heroAlt": "제조·물류·서비스 가격이 금리와 시장으로 전달되는 분석 장면",
+      "type": "research",
+      "published": "2026-09-10",
+      "localPath": "research/us-ppi-august-2026-preview/",
+      "heroImage": "assets/research/us-ppi-august-2026-preview/01-hero.png"
+    },
     {
       "id": "nvidia-goldman-conference-2026",
       "category": "AI 반도체",
