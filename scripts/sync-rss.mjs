@@ -44,7 +44,7 @@ const topicFor = (title, category, summary) => {
     return config.categories.find((c) => c.id === "semiconductors");
   }
   if (/AI|인공지능|팔란티어|앤트로픽|xAI|바이오/i.test(text)) return config.categories.find((c) => c.id === "stock-investing");
-  if (/환율|FOMC|금리|나스닥|S&P|정부|세금|코스피|종전|이란/i.test(text)) return config.categories.find((c) => c.id === "macro");
+  if (/PPI|CPI|생산자물가지수|소비자물가지수|물가|환율|FOMC|금리|나스닥|S&P|정부|세금|코스피|종전|이란/i.test(text)) return config.categories.find((c) => c.id === "macro");
   if (/우리나라|한국|국민성장|코스피|상장/i.test(text)) return config.categories.find((c) => c.id === "korea-market");
   return config.categories[0];
 };

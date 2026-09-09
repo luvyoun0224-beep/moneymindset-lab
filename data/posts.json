@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-09T20:53:55.347Z",
+  "generatedAt": "2026-09-09T23:27:10.745Z",
   "source": "https://rss.blog.naver.com/jasonjedi.xml",
   "categories": [
     {
@@ -29,6 +29,28 @@
     }
   ],
   "posts": [
+    {
+      "title": "로켓랩 태양전지 31.5% 효율, IMM Apex가 해자가 되는 조건 5가지",
+      "category": "미국 주식",
+      "topicId": "space-economy",
+      "topicLabel": "우주 경제",
+      "summary": "로켓랩이 9월 8일 차세대 우주용 태양전지 IMM Apex의 생산 출시를 발표했습니다. Rocket Lab 공식 발표에 따르면 초기 수명 기준 변환효율은 31.5%, 셀 질량은 이전 제품보다 40% 낮습니다. 기존 다중접합 태양전지에 사용되던 게르마늄 기판도 제거했습니다. 로켓랩을 발사 기업으로만 보면 이 뉴스가 작아 보일 수 있습니다.…",
+      "sourceUrl": "https://blog.naver.com/jasonjedi/224406753082?fromRss=true&trackingCode=rss",
+      "isoDate": "2026-09-09T23:22:08.000Z",
+      "slug": "224406753082",
+      "localPath": "posts/224406753082/"
+    },
+    {
+      "title": "미국 PPI 오늘 밤 9시30분, 4.7% 물가에서 볼 조건 5가지",
+      "category": "미국 주식",
+      "topicId": "macro",
+      "topicLabel": "매크로",
+      "summary": "미국의 2026년 8월 생산자물가지수(PPI)가 오늘 밤 발표됩니다. 미국 동부시간 9월 10일 오전 8시30분, 한국시간으로는 9월 10일 목요일 오후 9시30분입니다. 미국 노동통계국의 공식 일정에서 확인되는 시각입니다. 8월 실제 수치는 아직 공개되지 않았습니다. PPI는 기업이 상품과 서비스를 팔 때 받는 가격의 변화를…",
+      "sourceUrl": "https://blog.naver.com/jasonjedi/224406752769?fromRss=true&trackingCode=rss",
+      "isoDate": "2026-09-09T23:21:43.000Z",
+      "slug": "224406752769",
+      "localPath": "posts/224406752769/"
+    },
     {
       "title": "엔비디아 컨퍼런스 9월 11일 오전 12시 50분, AI 수요에서 볼 조건 5가지",
       "category": "엔비디아 로드맵",
@@ -556,28 +578,6 @@
       "isoDate": "2026-07-06T15:59:25.000Z",
       "slug": "224338642105",
       "localPath": "posts/224338642105/"
-    },
-    {
-      "title": "곧 있을 SK하이닉스 실적발표 분석",
-      "category": "우리나라 경제 및 주식",
-      "topicId": "semiconductors",
-      "topicLabel": "반도체",
-      "summary": "이번 실적발표는 단순 분기 실적 확인이 아닙니다 곧 있을 SK하이닉스 실적발표는 평소보다 훨씬 중요합니다. 이유는 간단합니다. 시장이 지금 딱 하나를 확인하고 싶어 하기 때문입니다. “AI 메모리 슈퍼사이클은 아직 살아 있는가?” 최근 시장은 크게 흔들렸습니다. 메타가 남는 AI 컴퓨팅 파워를 판매할 수 있다는 보도가 나오자, 투자자들은…",
-      "sourceUrl": "https://blog.naver.com/jasonjedi/224337486422?fromRss=true&trackingCode=rss",
-      "isoDate": "2026-07-05T16:16:11.000Z",
-      "slug": "224337486422",
-      "localPath": "posts/224337486422/"
-    },
-    {
-      "title": "메타가 부른 코스피 하락 반도체주 이제 끝?",
-      "category": "미국 주식",
-      "topicId": "semiconductors",
-      "topicLabel": "반도체",
-      "summary": "오늘 시장을 흔든 핵심은 메타가 남는 AI 컴퓨팅 파워를 외부에 판매하는 클라우드 사업을 추진한다는 보도였습니다. 처음에는 투자자들이 “드디어 메타가 막대한 AI 투자를 돈으로 바꾸려 한다”고 해석하면서 메타 주가가 급등했습니다. Barron’s에 따르면 메타 주가는 이 보도 이후 8.8% 올랐지만, 다음 날에는 오히려 3.5%…",
-      "sourceUrl": "https://blog.naver.com/jasonjedi/224334725191?fromRss=true&trackingCode=rss",
-      "isoDate": "2026-07-02T15:15:36.000Z",
-      "slug": "224334725191",
-      "localPath": "posts/224334725191/"
     }
   ]
 }
