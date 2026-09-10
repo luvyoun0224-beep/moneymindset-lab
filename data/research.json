@@ -1,6 +1,38 @@
 {
-  "generatedAt": "2026-09-10T08:22:08+09:00",
+  "generatedAt": "2026-09-11T08:16:28+09:00",
   "articles": [
+    {
+      "id": "apple-iphone-duo-supply-chain",
+      "category": "AI 디바이스",
+      "title": "Apple iPhone Duo 공급망 분석: 1999달러 폴더블과 Broadcom·Micron의 실제 기회",
+      "homeTitle": "iPhone Duo: Broadcom·Micron 공급망의 실제 기회",
+      "summary": "Apple의 1,999달러 첫 폴더블과 A20 Pro·온디바이스 AI를 Broadcom 공식 계약과 Micron의 미확정 공급 경계로 분석합니다.",
+      "publishedAt": "2026-09-11T08:16:28+09:00",
+      "focus": "iPhone Duo · A20 Pro · Broadcom · Micron · 온디바이스 AI",
+      "readTime": "약 43분",
+      "analystNote": "제품 발표와 공급망 매출을 바로 연결하지 않고, Broadcom의 공식 계약과 Micron의 확인되지 않은 물량을 분리합니다.",
+      "heroAlt": "폴더블 스마트폰과 메모리·RF 반도체 공급망",
+      "type": "research",
+      "published": "2026-09-11",
+      "localPath": "research/apple-iphone-duo-supply-chain/",
+      "heroImage": "assets/research/apple-iphone-duo-supply-chain/01-hero.png"
+    },
+    {
+      "id": "us-ppi-august-2026-results",
+      "category": "미국 매크로",
+      "title": "미국 8월 PPI 5.4% 분석: 에너지 충격과 성장주 할인율을 분리하는 방법",
+      "homeTitle": "미국 8월 PPI 5.4%: 에너지와 성장주 할인율",
+      "summary": "8월 PPI 0.4%·5.4% 재가속을 상품·에너지·서비스·PCE·국채금리와 기업 현금흐름으로 나눠 분석합니다.",
+      "publishedAt": "2026-09-11T08:16:07+09:00",
+      "focus": "PPI · 에너지 · PCE · 국채금리 · 성장주",
+      "readTime": "약 40분",
+      "analystNote": "헤드라인 5.4%를 에너지 충격과 근원 서비스로 분리하고, 성장주에는 할인율·원가·현금흐름의 세 경로로 연결합니다.",
+      "heroAlt": "에너지와 운송 가격이 금리와 성장주로 전달되는 분석 장면",
+      "type": "research",
+      "published": "2026-09-11",
+      "localPath": "research/us-ppi-august-2026-results/",
+      "heroImage": "assets/research/us-ppi-august-2026-results/01-hero.png"
+    },
     {
       "id": "rocketlab-imm-apex-solar-cell",
       "category": "우주 인프라",
