@@ -1,6 +1,38 @@
 {
-  "generatedAt": "2026-09-11T08:16:28+09:00",
+  "generatedAt": "2026-09-12T08:01:00+09:00",
   "articles": [
+    {
+      "id": "nvidia-goldman-demand-financing-2026",
+      "category": "AI 반도체",
+      "title": "NVIDIA Goldman Sachs 대담 분석: 수요 100%·공급 70%와 5000억달러 AI 금융의 검증 조건",
+      "homeTitle": "NVIDIA 수요 100%·공급 70%: AI 금융의 검증",
+      "summary": "NVIDIA의 수요 100%·공급 70% 전망과 5000억달러 AI 금융을 출하·전력·사용률·순환금융 조건으로 분석합니다.",
+      "publishedAt": "2026-09-12T08:01:00+09:00",
+      "focus": "NVIDIA · 수요 · 공급 · Vera Rubin · AI 금융",
+      "readTime": "약 44분",
+      "analystNote": "경영진의 낙관을 실제 출하·사용률·외부 고객 현금흐름과 금융기관의 독립 위험 부담으로 검증합니다.",
+      "heroAlt": "AI 팩토리와 전력·메모리·자본 공급망",
+      "type": "research",
+      "published": "2026-09-12",
+      "localPath": "research/nvidia-goldman-demand-financing-2026/",
+      "heroImage": "assets/research/nvidia-goldman-demand-financing-2026/01-hero.png"
+    },
+    {
+      "id": "us-cpi-august-2026-results",
+      "category": "미국 매크로",
+      "title": "미국 8월 CPI 3.4% 분석: 가솔린 충격과 근원물가·성장주 할인율을 분리하는 방법",
+      "homeTitle": "미국 8월 CPI 3.4%: 가솔린과 성장주 할인율",
+      "summary": "8월 CPI 0.4%·3.4%를 가솔린·근원물가·주거비·FOMC와 성장주 현금흐름으로 나눠 분석합니다.",
+      "publishedAt": "2026-09-12T08:00:00+09:00",
+      "focus": "CPI · 가솔린 · 근원물가 · FOMC · 성장주",
+      "readTime": "약 41분",
+      "analystNote": "월간 재가속과 연간 근원 둔화를 분리하고 에너지 충격이 주거·서비스·기업 현금흐름으로 번지는지 검증합니다.",
+      "heroAlt": "가솔린·식료품·도시 주거비와 물가 상승을 보여주는 장면",
+      "type": "research",
+      "published": "2026-09-12",
+      "localPath": "research/us-cpi-august-2026-results/",
+      "heroImage": "assets/research/us-cpi-august-2026-results/01-hero.png"
+    },
     {
       "id": "apple-iphone-duo-supply-chain",
       "category": "AI 디바이스",
