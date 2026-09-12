@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-11T20:55:45.278Z",
+  "generatedAt": "2026-09-12T20:31:07.540Z",
   "source": "https://rss.blog.naver.com/jasonjedi.xml",
   "categories": [
     {
@@ -29,6 +29,39 @@
     }
   ],
   "posts": [
+    {
+      "title": "오라클 OCI 121% 성장·RPO 6640억달러, 실적 뒤 확인할 조건 5가지",
+      "category": "미국 주식",
+      "topicId": "stock-investing",
+      "topicLabel": "주식투자",
+      "summary": "지난 9월 9일에는 오라클 실적 발표 전에 RPO 6380억달러와 현금흐름을 확인해야 한다고 적었습니다. 이제 예상이 아니라 결과가 나왔습니다. FY2027 1분기 매출은 193억달러, OCI 매출은 74억달러, RPO는 6640억달러였습니다. 숫자만 보면 AI 클라우드 수요가 더 강해졌습니다. 그런데 주가는 실적 다음 날 장중 반등을…",
+      "sourceUrl": "https://blog.naver.com/jasonjedi/224409818647?fromRss=true&trackingCode=rss",
+      "isoDate": "2026-09-12T18:35:40.000Z",
+      "slug": "224409818647",
+      "localPath": "posts/224409818647/"
+    },
+    {
+      "title": "템퍼스 전장유전체 10만 건, AI 바이오 데이터 해자가 되는 조건 5가지",
+      "category": "미국 주식",
+      "topicId": "stock-investing",
+      "topicLabel": "주식투자",
+      "summary": "템퍼스가 질환별 전장유전체 10만 건을 장기 임상 결과와 연결하는 연구 플랫폼을 만들겠다고 발표했습니다. 여기서 중요한 숫자는 10만이라는 규모보다 데이터가 질병의 진행과 치료 반응에 연결된다는 점입니다. 유전체만 많이 모은 데이터베이스와 환자의 실제 치료 과정을 함께 볼 수 있는 데이터베이스는 활용 범위가 다릅니다. 저는 템퍼스를…",
+      "sourceUrl": "https://blog.naver.com/jasonjedi/224409818135?fromRss=true&trackingCode=rss",
+      "isoDate": "2026-09-12T18:33:43.000Z",
+      "slug": "224409818135",
+      "localPath": "posts/224409818135/"
+    },
+    {
+      "title": "엔비디아·팔란티어 AIPCon 11, 130만 부품 공급망이 해자가 되는 조건 5가지",
+      "category": "팔란티어",
+      "topicId": "semiconductors",
+      "topicLabel": "반도체",
+      "summary": "엔비디아와 팔란티어가 AIPCon 11 무대에서 만났습니다. 이번에는 두 회사가 언젠가 협력하겠다는 발표가 아니었습니다. 엔비디아의 실제 공급망을 Palantir Ontology와 AIP로 운영하는 Command Center를 공개했습니다. 웨이퍼에서 시작해 고객이 첫 AI 토큰을 만드는 순간까지 부품과 공장, 납기와 의사결정을 연결하는…",
+      "sourceUrl": "https://blog.naver.com/jasonjedi/224409817667?fromRss=true&trackingCode=rss",
+      "isoDate": "2026-09-12T18:31:51.000Z",
+      "slug": "224409817667",
+      "localPath": "posts/224409817667/"
+    },
     {
       "title": "미국 CPI 0.4% 상승, 3.4% 물가에서 FOMC 전 확인할 조건 5가지",
       "category": "미국 주식",
@@ -545,39 +578,6 @@
       "isoDate": "2026-08-21T18:48:22.000Z",
       "slug": "224386254420",
       "localPath": "posts/224386254420/"
-    },
-    {
-      "title": "엔비디아 8월 26일 실적발표, 매출보다 먼저 봐야 할 6가지",
-      "category": "미국 주식",
-      "topicId": "semiconductors",
-      "topicLabel": "반도체",
-      "summary": "엔비디아가 8월 26일 FY2027 2분기 실적을 발표합니다. 결과 자료는 미국 태평양시간 오후 1시 20분쯤 공개되고, 컨퍼런스콜은 오후 2시에 시작합니다. 한국에서는 8월 27일 오전 5시 20분과 오전 6시에 확인할 수 있습니다. 이번에는 매출이 예상치를 넘었는지만 확인해서는 부족합니다. 엔비디아는 직전 분기에 매출 816억 달러,…",
-      "sourceUrl": "https://blog.naver.com/jasonjedi/224386254294?fromRss=true&trackingCode=rss",
-      "isoDate": "2026-08-21T18:47:56.000Z",
-      "slug": "224386254294",
-      "localPath": "posts/224386254294/"
-    },
-    {
-      "title": "SK하이닉스 40조 자사주 매입·전량 소각, 주가에 중요한 4가지",
-      "category": "우리나라 경제 및 주식",
-      "topicId": "semiconductors",
-      "topicLabel": "반도체",
-      "summary": "SK하이닉스가 40조 원어치 자사주를 사들여 모두 소각합니다. 단순히 규모가 큰 발표로만 볼 일은 아닙니다. 매입 대상은 2,407만 주로 전체 발행주식의 약 3.3%입니다. 8월 20일부터 11월 19일까지 약 3개월에 걸쳐 진행됩니다. 핵심은 네 가지입니다. • 40조 원 규모의 실제 장내 매수가 시작됩니다. • 매입한 주식은 회사가…",
-      "sourceUrl": "https://blog.naver.com/jasonjedi/224385119203?fromRss=true&trackingCode=rss",
-      "isoDate": "2026-08-20T17:49:33.000Z",
-      "slug": "224385119203",
-      "localPath": "posts/224385119203/"
-    },
-    {
-      "title": "미국주식 거래시간 2026 총정리: 서머타임·프리마켓·애프터마켓 한국시간",
-      "category": "미국 주식",
-      "topicId": "korea-market",
-      "topicLabel": "한국 시장",
-      "summary": "미국주식을 시작하고 한동안은 종목보다 거래시간이 더 헷갈렸습니다. 밤 10시 30분에 열린다고 외웠더니 어느 날은 11시 30분이 됐고, 증권사 앱에서는 정규장 전부터 가격이 움직였습니다. 프리마켓과 애프터마켓까지 보고 있으면 어디까지가 정규 거래인지 구분하기도 쉽지 않았습니다. 2026년 기준으로 보면 의외로 단순합니다. • 서머타임…",
-      "sourceUrl": "https://blog.naver.com/jasonjedi/224385107653?fromRss=true&trackingCode=rss",
-      "isoDate": "2026-08-20T17:19:00.000Z",
-      "slug": "224385107653",
-      "localPath": "posts/224385107653/"
     }
   ]
 }
