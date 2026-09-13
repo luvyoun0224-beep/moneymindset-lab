@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-13T20:46:17.611Z",
+  "generatedAt": "2026-09-13T23:19:46.629Z",
   "source": "https://rss.blog.naver.com/jasonjedi.xml",
   "categories": [
     {
@@ -29,6 +29,28 @@
     }
   ],
   "posts": [
+    {
+      "title": "에스투더블유 26.38% 급등, 오픈AI Daybreak가 매출이 되는 조건 5가지",
+      "category": "우리나라 경제 및 주식",
+      "topicId": "stock-investing",
+      "topicLabel": "주식투자",
+      "summary": "9월 11일 국내 증시는 코스피와 코스닥이 함께 약세였지만 일부 AI 보안주는 반대로 급등했습니다. 에스투더블유(S2W)는 1만4850원으로 마감해 전 거래일보다 26.38% 올랐고 거래대금은 약 476억원이었습니다. 시장이 반응한 재료는 오픈AI가 주도하는 사이버보안 생태계 Daybreak Defense Network 참여…",
+      "sourceUrl": "https://blog.naver.com/jasonjedi/224410805547?fromRss=true&trackingCode=rss",
+      "isoDate": "2026-09-13T23:15:34.000Z",
+      "slug": "224410805547",
+      "localPath": "posts/224410805547/"
+    },
+    {
+      "title": "9월 FOMC 9월 17일 새벽 3시, 3.50~3.75% 금리에서 볼 조건 5가지",
+      "category": "미국 주식",
+      "topicId": "macro",
+      "topicLabel": "매크로",
+      "summary": "2026년 9월 연방공개시장위원회(FOMC)가 9월 15일부터 16일까지 열립니다. 정책 결정은 한국시간 9월 17일 새벽 3시, 기자회견은 새벽 3시 30분입니다. 이번 회의에는 새로운 경제전망과 점도표도 함께 나옵니다. 금리 숫자 하나보다 연준이 2026년과 2027년의 경로를 어떻게 바꾸는지가 더 중요합니다. 현재 연방기금금리 목표…",
+      "sourceUrl": "https://blog.naver.com/jasonjedi/224410803580?fromRss=true&trackingCode=rss",
+      "isoDate": "2026-09-13T23:12:24.000Z",
+      "slug": "224410803580",
+      "localPath": "posts/224410803580/"
+    },
     {
       "title": "오라클 OCI 121% 성장·RPO 6640억달러, 실적 뒤 확인할 조건 5가지",
       "category": "미국 주식",
@@ -556,28 +578,6 @@
       "isoDate": "2026-08-22T23:28:26.000Z",
       "slug": "224387189528",
       "localPath": "posts/224387189528/"
-    },
-    {
-      "title": "삼성전자 최대 110조 vs SK하이닉스 40조, 주주환원에서 더 중요한 차이",
-      "category": "우리나라 경제 및 주식",
-      "topicId": "semiconductors",
-      "topicLabel": "반도체",
-      "summary": "삼성전자가 2026년 약 90조~110조 원 규모의 주주환원 계획을 내놨습니다. 이틀 앞서 SK하이닉스는 40조 원어치 자사주를 사들여 전량 소각하겠다고 밝혔습니다. 며칠 사이 한국 반도체 대표 기업 두 곳이 대규모 환원책을 꺼낸 셈입니다. 숫자만 보면 삼성전자가 크고, 소각 효과만 보면 SK하이닉스가 강해 보입니다. 110조 원과…",
-      "sourceUrl": "https://blog.naver.com/jasonjedi/224386258314?fromRss=true&trackingCode=rss",
-      "isoDate": "2026-08-21T19:02:03.000Z",
-      "slug": "224386258314",
-      "localPath": "posts/224386258314/"
-    },
-    {
-      "title": "템퍼스AI 급등, Moderna 암백신 성공이 Personalis 인수에 중요한 이유",
-      "category": "미국 주식",
-      "topicId": "stock-investing",
-      "topicLabel": "주식투자",
-      "summary": "템퍼스AI 주가가 며칠 새 크게 뛰었습니다. 그렇다고 새 실적이 나온 것은 아닙니다. 시장의 시선이 향한 곳은 템퍼스AI가 인수하기로 한 Personalis와 Moderna·Merck의 맞춤형 암 치료 프로그램 사이의 연결고리였습니다. Moderna와 Merck는 8월 19일 고위험 흑색종 환자를 대상으로 진행한 Phase 3…",
-      "sourceUrl": "https://blog.naver.com/jasonjedi/224386254420?fromRss=true&trackingCode=rss",
-      "isoDate": "2026-08-21T18:48:22.000Z",
-      "slug": "224386254420",
-      "localPath": "posts/224386254420/"
     }
   ]
 }

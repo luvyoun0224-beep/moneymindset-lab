@@ -1,6 +1,38 @@
 {
-  "generatedAt": "2026-09-13T08:01:00+09:00",
+  "generatedAt": "2026-09-14T08:15:00+09:00",
   "articles": [
+    {
+      "id": "s2w-openai-daybreak-revenue-path",
+      "category": "AI 보안",
+      "title": "S2W·OpenAI Daybreak 심층 분석: 26.38% 급등이 제품·계약·반복 매출로 바뀌는 조건",
+      "homeTitle": "S2W·OpenAI Daybreak: 급등이 매출로 바뀌는 조건",
+      "summary": "S2W의 Daybreak 참여와 26.38% 급등을 제품 통합·유료 계약·갱신·반복 매출·현금흐름으로 나눠 검증합니다.",
+      "publishedAt": "2026-09-14T08:15:00+09:00",
+      "focus": "S2W · OpenAI · Daybreak · AI 보안 · 반복 매출",
+      "readTime": "약 45분",
+      "analystNote": "파트너 참여와 수주를 분리하고 제품·계약·갱신·현금흐름의 순서로 확인합니다.",
+      "heroAlt": "서울의 AI 사이버 방어 운영 환경과 글로벌 위협정보 연결",
+      "type": "research",
+      "published": "2026-09-14",
+      "localPath": "research/s2w-openai-daybreak-revenue-path/",
+      "heroImage": "assets/research/s2w-openai-daybreak-revenue-path/01-hero.png"
+    },
+    {
+      "id": "september-2026-fomc-dot-plot-growth-stocks",
+      "category": "미국 매크로",
+      "title": "2026년 9월 FOMC 심층 분석: 3.50~3.75%에서 점도표·물가·고용·성장주를 읽는 법",
+      "homeTitle": "9월 FOMC: 점도표·물가·고용·성장주 읽는 법",
+      "summary": "9월 FOMC의 한국시간, 3.50~3.75% 출발점, CPI·고용·점도표와 성장주 전달 경로를 시나리오별로 분석합니다.",
+      "publishedAt": "2026-09-14T08:12:00+09:00",
+      "focus": "FOMC · 점도표 · CPI · 고용 · 성장주",
+      "readTime": "약 43분",
+      "analystNote": "결정 하나보다 점도표·국채금리·달러·기업 현금흐름이 같은 방향인지 확인합니다.",
+      "heroAlt": "2026년 9월 FOMC와 글로벌 기술주 반응",
+      "type": "research",
+      "published": "2026-09-14",
+      "localPath": "research/september-2026-fomc-dot-plot-growth-stocks/",
+      "heroImage": "assets/research/september-2026-fomc-dot-plot-growth-stocks/01-hero.png"
+    },
     {
       "id": "nvidia-palantir-aipcon11-supply-chain",
       "category": "Operational AI",
