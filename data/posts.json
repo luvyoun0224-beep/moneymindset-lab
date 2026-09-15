@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-14T21:47:11.459Z",
+  "generatedAt": "2026-09-15T12:53:50.792Z",
   "source": "https://rss.blog.naver.com/jasonjedi.xml",
   "categories": [
     {
@@ -29,6 +29,28 @@
     }
   ],
   "posts": [
+    {
+      "title": "아이온큐 1만9397 큐비트·26일, 비트코인을 이미 깼다는 뜻이 아닌 이유",
+      "category": "아이온큐",
+      "topicId": "stock-investing",
+      "topicLabel": "주식투자",
+      "summary": "IonQ의 256비트 타원곡선 서명 해독 자원 추정은 무엇을 증명했고 현재 비트코인 보안과 투자 가치에 어떤 의미가 있는가? 오늘 글은 이 질문에 답하기 위해 확인된 사실과 아직 모르는 조건을 나눕니다. 큰 숫자나 새 제도만 보고 바로 매매 결론을 내리지 않고 실제 주문·기술·계약과 현금흐름까지 이어지는 경로를 봅니다. 작성·검증…",
+      "sourceUrl": "https://blog.naver.com/jasonjedi/224412950215?fromRss=true&trackingCode=rss",
+      "isoDate": "2026-09-15T12:48:08.000Z",
+      "slug": "224412950215",
+      "localPath": "posts/224412950215/"
+    },
+    {
+      "title": "KRX 애프터마켓 오후 8시까지, 9월 14일부터 달라진 주문 조건 6가지",
+      "category": "우리나라 경제 및 주식",
+      "topicId": "korea-market",
+      "topicLabel": "한국 시장",
+      "summary": "2026년 9월 14일 시작된 KRX 애프터마켓의 거래시간과 주문·종가·ETF·NXT 관련 주의점은 무엇인가? 오늘 글은 이 질문에 답하기 위해 확인된 사실과 아직 모르는 조건을 나눕니다. 큰 숫자나 새 제도만 보고 바로 매매 결론을 내리지 않고 실제 주문·기술·계약과 현금흐름까지 이어지는 경로를 봅니다. 작성·검증 기준일은…",
+      "sourceUrl": "https://blog.naver.com/jasonjedi/224412948472?fromRss=true&trackingCode=rss",
+      "isoDate": "2026-09-15T12:46:21.000Z",
+      "slug": "224412948472",
+      "localPath": "posts/224412948472/"
+    },
     {
       "title": "에스투더블유 26.38% 급등, 오픈AI Daybreak가 매출이 되는 조건 5가지",
       "category": "우리나라 경제 및 주식",
@@ -556,28 +578,6 @@
       "isoDate": "2026-08-23T19:43:40.000Z",
       "slug": "224388014091",
       "localPath": "posts/224388014091/"
-    },
-    {
-      "title": "아이온큐 8% 급등, 캐나다 MOU보다 먼저 봐야 할 숫자 5개",
-      "category": "아이온큐",
-      "topicId": "stock-investing",
-      "topicLabel": "주식투자",
-      "summary": "아이온큐 주가는 8월 21일 44.86달러로 장을 마쳤습니다. 하루 만에 8.02% 올랐습니다. 제가 추적하는 미국 성장주 중에서는 템퍼스AI 다음으로 움직임이 컸습니다. 템퍼스AI는 전날 글에서 이미 다뤘으니 이번에는 아이온큐를 다시 들여다봤습니다. 이번 8% 상승을 캐나다 협력 발표 하나로 설명할 근거는 부족합니다. 아이온큐는 8월…",
-      "sourceUrl": "https://blog.naver.com/jasonjedi/224387189707?fromRss=true&trackingCode=rss",
-      "isoDate": "2026-08-22T23:28:49.000Z",
-      "slug": "224387189707",
-      "localPath": "posts/224387189707/"
-    },
-    {
-      "title": "테슬라 로보택시 5,000대 승인, 주가 5% 급등에도 꼭 구분할 숫자",
-      "category": "미국 주식",
-      "topicId": "stock-investing",
-      "topicLabel": "주식투자",
-      "summary": "테슬라 주가는 8월 21일 362.86달러로 장을 마쳤습니다. 하루 만에 5.14% 올랐습니다. 시장의 시선이 향한 곳은 네바다주의 로보택시 허가였습니다. 네바다 교통당국은 테슬라 로보택시 사업자에게 AVNC 002를 내주고, 첫 12개월 동안 최대 5,000대를 운영할 수 있도록 승인했습니다. 그렇다고 “라스베이거스에 테슬라 로보택시…",
-      "sourceUrl": "https://blog.naver.com/jasonjedi/224387189528?fromRss=true&trackingCode=rss",
-      "isoDate": "2026-08-22T23:28:26.000Z",
-      "slug": "224387189528",
-      "localPath": "posts/224387189528/"
     }
   ]
 }

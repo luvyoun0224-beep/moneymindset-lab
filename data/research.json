@@ -1,6 +1,38 @@
 {
-  "generatedAt": "2026-09-14T08:15:00+09:00",
+  "generatedAt": "2026-09-15T21:47:00+09:00",
   "articles": [
+    {
+      "id": "ionq-ecc-256-resource-estimate",
+      "category": "양자컴퓨팅",
+      "title": "IonQ 256비트 ECC 자원 추정 심층 분석: 1만9397 물리 큐비트와 25.7일이 투자 논리에 주는 의미",
+      "homeTitle": "IonQ ECC-256: 1만9397 큐비트와 25.7일",
+      "summary": "IonQ의 256비트 ECC 자원 추정을 논리·물리 큐비트, 오류보정, 실행 장비, 양자보안 고객과 현금흐름으로 나눠 검증합니다.",
+      "publishedAt": "2026-09-15T21:47:00+09:00",
+      "focus": "IonQ · ECC-256 · 오류보정 · 양자보안 · 현금흐름",
+      "readTime": "약 46분",
+      "analystNote": "자원 추정과 실제 공격을 분리하고 기술 논문이 유료 고객과 반복 매출로 이어지는지 확인합니다.",
+      "heroAlt": "오류보정 이온트랩 양자컴퓨터와 암호 방어 연구",
+      "type": "research",
+      "published": "2026-09-15",
+      "localPath": "research/ionq-ecc-256-resource-estimate/",
+      "heroImage": "assets/research/ionq-ecc-256-resource-estimate/01-hero.png"
+    },
+    {
+      "id": "krx-aftermarket-first-day",
+      "category": "한국 시장",
+      "title": "KRX 애프터마켓 심층 분석: 오후 4~8시 실시간 거래가 주문·종가·유동성에 미치는 변화",
+      "homeTitle": "KRX 애프터마켓: 오후 4~8시 주문 경계",
+      "summary": "KRX 애프터마켓 첫 시행을 거래시간·미체결 주문·ETF 제외·NXT 라우팅·스프레드와 다음 정규장 가격으로 분석합니다.",
+      "publishedAt": "2026-09-15T21:46:00+09:00",
+      "focus": "KRX · 애프터마켓 · NXT · 주문 · 유동성",
+      "readTime": "약 44분",
+      "analystNote": "거래시간 확대와 좋은 거래를 분리하고 시장·종목·미체결·호가·공시·다음 정규장을 확인합니다.",
+      "heroAlt": "퇴근 뒤 국내주식 애프터마켓을 확인하는 투자자",
+      "type": "research",
+      "published": "2026-09-15",
+      "localPath": "research/krx-aftermarket-first-day/",
+      "heroImage": "assets/research/krx-aftermarket-first-day/01-hero.png"
+    },
     {
       "id": "s2w-openai-daybreak-revenue-path",
       "category": "AI 보안",
