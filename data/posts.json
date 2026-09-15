@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-15T12:53:50.792Z",
+  "generatedAt": "2026-09-15T21:17:25.754Z",
   "source": "https://rss.blog.naver.com/jasonjedi.xml",
   "categories": [
     {
@@ -29,6 +29,28 @@
     }
   ],
   "posts": [
+    {
+      "title": "알파벳 Waymo 라스베이거스 첫 무인 승객, 24마일·6세대 Ojai가 중요한 이유",
+      "category": "미국 주식",
+      "topicId": "stock-investing",
+      "topicLabel": "주식투자",
+      "summary": "Waymo의 라스베이거스 첫 무인 승객 운행은 도시 확장, 안전성과 수익화 가운데 무엇을 실제로 증명했는가? 오늘 글은 숫자와 발표를 매매 결론으로 바로 바꾸지 않고, 확인된 사실·해석·반대 근거·아직 모르는 조건을 분리해 봅니다. 작성·검증 기준일은 2026-09-16입니다. 기준일 이후의 결과는 현재 사실처럼 미리 쓰지 않습니다.…",
+      "sourceUrl": "https://blog.naver.com/jasonjedi/224413098251?fromRss=true&trackingCode=rss",
+      "isoDate": "2026-09-15T15:30:13.000Z",
+      "slug": "224413098251",
+      "localPath": "posts/224413098251/"
+    },
+    {
+      "title": "미국 10년물 5%·브렌트유 107달러, AI 반도체 조정에서 볼 조건 6가지",
+      "category": "경제지식 행동강령을 만든 책",
+      "topicId": "macro",
+      "topicLabel": "매크로",
+      "summary": "유가와 장기금리가 동시에 오른 구간에서 NVIDIA·Broadcom·Micron과 한국 반도체를 어떤 순서로 확인해야 하는가? 오늘 글은 숫자와 발표를 매매 결론으로 바로 바꾸지 않고, 확인된 사실·해석·반대 근거·아직 모르는 조건을 분리해 봅니다. 작성·검증 기준일은 2026-09-16입니다. 기준일 이후의 결과는 현재 사실처럼 미리…",
+      "sourceUrl": "https://blog.naver.com/jasonjedi/224413095916?fromRss=true&trackingCode=rss",
+      "isoDate": "2026-09-15T15:26:56.000Z",
+      "slug": "224413095916",
+      "localPath": "posts/224413095916/"
+    },
     {
       "title": "아이온큐 1만9397 큐비트·26일, 비트코인을 이미 깼다는 뜻이 아닌 이유",
       "category": "아이온큐",
@@ -556,28 +578,6 @@
       "isoDate": "2026-08-24T16:29:26.000Z",
       "slug": "224389122986",
       "localPath": "posts/224389122986/"
-    },
-    {
-      "title": "로켓랩 9억8100만 달러 계약? 실제 확정은 1200만 달러입니다",
-      "category": "미국 주식",
-      "topicId": "space-economy",
-      "topicLabel": "우주 경제",
-      "summary": "결론부터 말하면, 로켓랩이 9억8100만 달러를 수주한 것이 아니다. 9억8100만 달러는 미국 우주군 NITE-STAR 프로그램에 선정된 15개 기업이 앞으로 개별 과업 주문을 두고 경쟁하는 공동 상한이다. 로켓랩이 당장 확보한 매출도, 로켓랩에 배정된 몫도 아니다. 로켓랩이 별도의 Space Data Network Backbone…",
-      "sourceUrl": "https://blog.naver.com/jasonjedi/224388014290?fromRss=true&trackingCode=rss",
-      "isoDate": "2026-08-23T19:44:21.000Z",
-      "slug": "224388014290",
-      "localPath": "posts/224388014290/"
-    },
-    {
-      "title": "월급날 110만원 투자 3년차, 누적수익률 37~40%보다 중요한 원칙",
-      "category": "Money Mindset",
-      "topicId": "stock-investing",
-      "topicLabel": "주식투자",
-      "summary": "처음부터 답을 말하면, 내 투자에서 가장 중요한 숫자는 수익률이 아니다. 월급날마다 110만원을 먼저 떼어 놓는 것, 그리고 내가 산 기업을 왜 계속 보유하는지 설명할 수 있는지가 더 중요하다. 올해로 투자 3년 차가 됐다. 지금의 방식은 주식 100만원, 비트코인 6만원, 이더리움 4만원. 합계 110만원을 월급날 바로 투자하는…",
-      "sourceUrl": "https://blog.naver.com/jasonjedi/224388014091?fromRss=true&trackingCode=rss",
-      "isoDate": "2026-08-23T19:43:40.000Z",
-      "slug": "224388014091",
-      "localPath": "posts/224388014091/"
     }
   ]
 }
