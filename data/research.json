@@ -1,6 +1,38 @@
 {
-  "generatedAt": "2026-09-15T21:47:00+09:00",
+  "generatedAt": "2026-09-16T00:30:00+09:00",
   "articles": [
+    {
+      "id": "waymo-las-vegas-ojai",
+      "category": "자율주행",
+      "title": "Waymo 라스베이거스 심층 분석: 24마일 서비스 구역과 6세대 Ojai가 Alphabet 가치에 주는 의미",
+      "homeTitle": "Waymo 라스베이거스: 24마일·6세대 Ojai",
+      "summary": "첫 무인 승객 운행을 도시 수가 아니라 안전성·차량 가동률·Ojai 원가·유료 반복 승차와 Alphabet 현금흐름으로 검증합니다.",
+      "publishedAt": "2026-09-16T00:29:00+09:00",
+      "focus": "Alphabet · Waymo · Las Vegas · Ojai · Robotaxi",
+      "readTime": "약 48분",
+      "analystNote": "10만명 관심 등록과 유료 고객을 구분하고 도시 확장이 차량당 경제성으로 이어지는지 추적합니다.",
+      "heroAlt": "라스베이거스 도심의 6세대 센서 기반 로보택시",
+      "type": "research",
+      "published": "2026-09-16",
+      "localPath": "research/waymo-las-vegas-ojai/",
+      "heroImage": "assets/research/waymo-las-vegas-ojai/01-hero.png"
+    },
+    {
+      "id": "oil-yield-ai-pressure",
+      "category": "시장·반도체",
+      "title": "미국 10년물 5%와 브렌트유 107달러 심층 분석: AI 반도체·코스피 밸류에이션의 연결고리",
+      "homeTitle": "미국 10년물 5%·브렌트유 107달러",
+      "summary": "유가와 장기금리의 동시 상승을 NVIDIA·Broadcom·Micron과 한국 반도체의 할인율·수요·마진·현금흐름으로 나눠 봅니다.",
+      "publishedAt": "2026-09-16T00:25:00+09:00",
+      "focus": "미국 10년물 · 브렌트유 · NVIDIA · Broadcom · Micron",
+      "readTime": "약 49분",
+      "analystNote": "금리 충격과 이익 충격을 분리하고 AI 수요가 실제 주문·재고·마진에서 바뀌는지 확인합니다.",
+      "heroAlt": "유가와 장기금리가 AI 데이터센터를 압박하는 장면",
+      "type": "research",
+      "published": "2026-09-16",
+      "localPath": "research/oil-yield-ai-pressure/",
+      "heroImage": "assets/research/oil-yield-ai-pressure/01-hero.png"
+    },
     {
       "id": "ionq-ecc-256-resource-estimate",
       "category": "양자컴퓨팅",
